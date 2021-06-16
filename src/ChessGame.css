@@ -1,0 +1,132 @@
+:root {
+  --piece_select: #00FFFB;
+  --piece_option: lime;
+  --piece_capture: red;
+
+  --dark-bkgd: #282c34;
+  --light-bkgd: #505d77;
+  --text: white;
+  --special-text: #61dafb;
+}
+
+.App {
+    text-align: center;
+  }
+  
+.App-header {
+  background-color: var(--dark-bkgd);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text);
+}
+
+.App-link {
+  color: var(--special-text);
+}
+
+.App-body {
+  background-color: var(--light-bkgd);
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text);
+}
+
+.ChessBoard {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 10px;
+
+  width: 400px;
+  height: 400px;
+}
+
+.BoardTile {
+  
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 38px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.BoardTile_selected {
+  border-color: var(--piece_select);
+
+  border-radius: 10px;
+  border-width: medium;
+  border-style: solid;
+
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 38px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.BoardTile_option {
+  border-color: var(--piece_option);
+
+  border-radius: 10px;
+  border-width: medium;
+  border-style: solid;
+
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 38px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.BoardTile_capture {
+  border-color: var(--piece_capture);
+
+  border-radius: 10px;
+  border-width: medium;
+  border-style: solid;
+
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 38px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.Piece {
+  padding: 0;
+  margin: 0;
+
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.SideBar {
+  background-color: var(--dark-bkgd);
+  padding: 30px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.TimerBox {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.Timer {
+  margin: 10px;
+  
+}
