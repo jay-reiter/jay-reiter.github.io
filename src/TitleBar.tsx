@@ -1,5 +1,6 @@
 import github_png from './assets/icons/github.png'
 import linkedin_png from './assets/icons/linkedin.png'
+import profile_pic from './assets/pictures/profile_pic.png'
 
 function TitleBar () {
     return (
@@ -9,7 +10,10 @@ function TitleBar () {
                   <h1 className="info">Jay Reiter</h1>
               </div>
               <div>
-                  <h2 className="info">Hello! I'm a Math and Computer Science student at UIUC. This website has some of the projects I'm working on and stuff I'm interested in.</h2>
+                    <h2 className="info">
+                      Hello! I'm a Math and Computer Science student at UIUC. I built this website to
+                      show you some of the projects I'm working on and stuff I'm interested in.
+                    </h2>
               </div>
               <div>
                   <ul className="contacts">
@@ -34,18 +38,16 @@ function TitleBar () {
           </div>
           
           <div id="icons">
-              <ul className="link_icon">
-                  <li className="link_icon">
-                      <a href="https://github.com/jay-reiter" target="_blank">
-                          <img src={github_png} alt="My Github!" className="link_icon" />
-                      </a>
-                  </li>
-                  <li className="link_icon">
-                      <a href="https://www.linkedin.com/in/jayreiter1/" target="_blank">
-                          <img src={linkedin_png} alt="My Linkedin!" className="link_icon" />
-                      </a>
-                  </li>
-              </ul>
+            <div>
+                <img src={profile_pic} alt="My Picture" style={{width: "100%"}}/>
+            </div>
+            <a href="https://github.com/jay-reiter" target="_blank">
+                        <img src={github_png} alt="My Github!" className="link_icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/jayreiter1/" target="_blank">
+                <img src={linkedin_png} alt="My Linkedin!" className="link_icon" />
+            </a>
+
           </div>
         </div>
     );

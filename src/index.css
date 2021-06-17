@@ -29,9 +29,7 @@ body{
   background-color: var(--color__body);
   color: var(--color__text);
 
-  width:800px;
-  /* max-width:800px;
-  min-width:500px; */
+  width: 900px;
   
   padding: 18px;
   padding-top: 20px;
@@ -135,25 +133,23 @@ li.contacts {
 /* icon links */
 #icons {
   width: 20%;
-  float: right;
-  clear: right;
+  display: flex;
+  align-items:center;
+  height: 100%;
 
   /* background-color: brown; */
 }
 img.link_icon {
-  display:inline;
   max-width:30px;
   max-height:30px;
 }
 ul.link_icon {
   list-style-type: none;
-  float: right;
 
   margin: 0;
   padding: 0;
 }
 li.link_icon {
-  display: block;
   float: left;
 
   margin: 0px;
