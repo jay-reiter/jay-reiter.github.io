@@ -38,16 +38,17 @@ function TitleBar () {
           </div>
           
           <div id="icons">
-            <div>
-                <img src={profile_pic} alt="My Picture" style={{width: "100%"}}/>
+            <div style={{display:"flex", flexDirection:"column", alignItems: "center"}}>
+                <img src={profile_pic} alt="My Picture" style={{width: "70%"}} title="Me!"/>
             </div>
-            <a href="https://github.com/jay-reiter" target="_blank">
-                        <img src={github_png} alt="My Github!" className="link_icon" />
-            </a>
-            <a href="https://www.linkedin.com/in/jayreiter1/" target="_blank">
-                <img src={linkedin_png} alt="My Linkedin!" className="link_icon" />
-            </a>
-
+            <div style={{display: "flex", flexDirection: "row"}}>
+                <a href="https://github.com/jay-reiter" target="_blank">
+                            <img src={github_png} alt="My Github!" className="link_icon" title="My Github" />
+                </a>
+                <a href="https://www.linkedin.com/in/jayreiter1/" target="_blank">
+                    <img src={linkedin_png} alt="My Linkedin!" className="link_icon" title="My LinkedIn" />
+                </a>
+            </div>
           </div>
         </div>
     );

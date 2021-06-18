@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import TitleBar from './TitleBar'
 import TicTacToeGame from './TicTacToeGame';
 import ChessGame from './ChessGame';
+import NavigationBar from './NavigationBar';
+
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router,
@@ -17,25 +20,14 @@ import store from './store'
 ReactDOM.render(
 
   <React.StrictMode>
-
     <Provider store={store}>
-      
       <Router>
-        
-        <TitleBar />
 
-        <div>
-          <ul>
-            <li>
-              <Link to="/index">Home</Link>
-            </li>
-            <li>
-              <Link to="/TicTacToe">Play Tic-Tac-Toe</Link>
-            </li>
-            <li>
-              <Link to="/Chess">Play Chess</Link>
-            </li>
-          </ul>
+        {/* Wrapper for all the content: */}
+        <div style={{display: "flex", flexDirection:"column"}}>
+          <TitleBar />
+          <NavigationBar />
+          
         </div>
 
         <Switch>
@@ -49,9 +41,7 @@ ReactDOM.render(
             <Home />
           </Route>
         </Switch>
-
       </Router>
-
     </Provider>
 
   </React.StrictMode>,

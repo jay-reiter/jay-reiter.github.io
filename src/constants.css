@@ -1,0 +1,24 @@
+/* For defining global constants like my colors */
+
+:root {
+    /* BLUE/RED/YELLOW color scheme */
+    /* --color__backdrop: aliceblue;
+    --color__body: #132C46;
+    --color__title: #D9D93A;
+    --color__subtitle: #FE4E45;
+    --color__highlight: #FE4E45;
+    --color__accent: #5D2E9A;
+    --color__text: white;
+    --color__box: aliceblue */
+  
+    /* Professional BLUE/WHITE color scheme */
+    --color__backdrop: aliceblue;
+    --color__body: white;
+    --color__title: black;
+    --color__subtitle: grey;
+    --color__highlight: blue;
+    --color__accent: blue;
+    --color__text: black;
+    --color__box: #F1F1F1;
+    --color__altbackdrop: #e1e1e1;
+  }
