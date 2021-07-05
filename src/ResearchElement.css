@@ -1,0 +1,44 @@
+/* Declare global variables for colors, etc. */
+@import "./constants.css";
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: var(--color__backdrop);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--color__title);
+}
+
+.App-body {
+  background-color: var(--color__backdrop);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: var(--color__text);
+}
+
+.TicTacToeBoard {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 150px;
+  height: 150px;
+}
+
+.Board-tile {
+  width: 50px;
+  height: 50px;
+
+  margin: 0;
+
+  font-size: 38px;
+}

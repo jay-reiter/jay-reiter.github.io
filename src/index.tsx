@@ -16,6 +16,7 @@ import { BrowserRouter as Router,
 
 import { Provider } from 'react-redux'
 import store from './store'
+import PadicVisualization from './PadicVisualization';
 
 ReactDOM.render(
 
@@ -31,16 +32,24 @@ ReactDOM.render(
         </div>
 
         <Switch>
+
+          <Route path="/">
+            <Home />
+          </Route>
+          
+          <Route path="/PadicVisualization">
+            <PadicVisualization />
+          </Route>
+
           <Route path="/TicTacToe">
             <TicTacToeGame />
           </Route>
           <Route path="/Chess">
             <ChessGame />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+
         </Switch>
+
       </Router>
     </Provider>
 
@@ -50,7 +59,7 @@ ReactDOM.render(
 
 function Home() {
   return (
-    <>Welcome!</>
+    <p>Welcome!!!!</p>
   );
 }
 
