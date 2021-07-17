@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import TitleBar from './TitleBar'
-import TicTacToeGame from './TicTacToeGame';
-import ChessGame from './ChessGame';
+import TicTacToeGame from './games/TicTacToeGame';
+import ChessGame from './games/ChessGame';
 import NavigationBar from './NavigationBar';
 
 import reportWebVitals from './reportWebVitals';
@@ -16,41 +16,49 @@ import { BrowserRouter as Router,
 
 import { Provider } from 'react-redux'
 import store from './store'
+import { ThemeProvider } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import theme from './theme/theme'
+
 import PadicVisualization from './PadicVisualization';
 
 ReactDOM.render(
 
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
 
-        {/* Wrapper for all the content: */}
-        <div style={{display: "flex", flexDirection:"column"}}>
-          <TitleBar />
-          <NavigationBar />
-          
-        </div>
+        <Router>
 
-        <Switch>
+          {/* Wrapper for all the content: */}
+          <div style={{display: "flex", flexDirection:"column"}}>
+            <TitleBar />
+            <NavigationBar />
+            
+          </div>
 
-          <Route path="/">
-            <Home />
-          </Route>
-          
-          <Route path="/PadicVisualization">
-            <PadicVisualization />
-          </Route>
+            <Switch>
 
-          <Route path="/TicTacToe">
-            <TicTacToeGame />
-          </Route>
-          <Route path="/Chess">
-            <ChessGame />
-          </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+              
+              <Route path="/PadicVisualization">
+                <PadicVisualization />
+              </Route>
 
-        </Switch>
+              <Route path="/TicTacToe">
+                <TicTacToeGame />
+              </Route>
+              <Route path="/Chess">
+                <ChessGame />
+              </Route>
 
-      </Router>
+            </Switch>  
+        </Router>
+
+      </ThemeProvider>
     </Provider>
 
   </React.StrictMode>,
