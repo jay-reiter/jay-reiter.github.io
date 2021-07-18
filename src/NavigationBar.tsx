@@ -87,7 +87,7 @@ const NavButton: React.FC<NavButtonProps> = ({ tabName, dropdownContent }) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <Box px={1}>
+        <Box px={1} onClick={handleClose}>
           {dropdownContent?.map((elem: DropdownLink) => (
             <Link to={`/${toRouterPath(tabName)}/${elem.path}`}>
               <Typography variant="subtitle1">{elem.name}</Typography>

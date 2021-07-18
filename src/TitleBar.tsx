@@ -81,31 +81,30 @@ function TitleBar() {
               alignContent="flexStart"
             >
               <Tooltip title="My LinkedIn">
-                <IconButton disableRipple disableTouchRipple>
-                  <img
-                    src={linkedin_png}
-                    alt="my_github"
-                    height="40px"
-                    width="40px"
-                  />
-                </IconButton>
+                <a href="https://www.linkedin.com/in/jayreiter1/">
+                  <IconButton disableRipple disableTouchRipple>
+                    <img
+                      src={linkedin_png}
+                      alt="my_github"
+                      height="40px"
+                      width="40px"
+                    />
+                  </IconButton>
+                </a>
               </Tooltip>
               <Tooltip title="My Github">
-                <IconButton disableRipple disableTouchRipple>
-                  <img
-                    src={github_png}
-                    alt="my_github"
-                    height="40px"
-                    width="40px"
-                  />
-                </IconButton>
+                <a href="https://github.com/jay-reiter">
+                  <IconButton disableRipple disableTouchRipple>
+                    <img
+                      src={github_png}
+                      alt="my_github"
+                      height="40px"
+                      width="40px"
+                    />
+                  </IconButton>
+                </a>
               </Tooltip>
             </Box>
-            {/* <Box display="flex" justifyContent="center" width="100%" mr={4}>
-              <Button variant="outlined">
-                <Typography>Resume</Typography>
-              </Button>
-            </Box> */}
           </Box>
         </Box>
       </Box>
