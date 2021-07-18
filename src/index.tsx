@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
 import TitleBar from "./TitleBar";
 import { Box, CssBaseline, ThemeProvider, useTheme } from "@material-ui/core";
@@ -10,32 +10,26 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 
-// const Index = () => {
-//   const theme = useTheme();
-//   return (
-//     <>
-//       <TitleBar />
-//       <p>Hello How are you</p>
-//     </>
-//   );
-// };
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-
         <Router>
           <TitleBar />
-          <p>Hello How are you</p>
           <Switch>
-            <Route path="/">{/* <Home /> */}Home</Route>
-
-            <Route path="/PadicVisualization">padic</Route>
-
-            <Route path="/TicTacToe">tictactoe </Route>
-            <Route path="/Chess">chess </Route>
+            <Route exact path="/">
+              Hooome
+            </Route>
+            <Route exact path="/code-projects/padic-visualization">
+              padic viz
+            </Route>
+            <Route exact path="/games/tic-tac-toe">
+              tictactoe
+            </Route>
+            <Route exact path="/games/chess">
+              chess
+            </Route>
           </Switch>
         </Router>
       </ThemeProvider>
