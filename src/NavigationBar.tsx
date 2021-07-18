@@ -87,11 +87,13 @@ const NavButton: React.FC<NavButtonProps> = ({ tabName, dropdownContent }) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        {dropdownContent?.map((elem: DropdownLink) => (
-          <Link to={`/${toRouterPath(tabName)}/${elem.path}`}>
-            <Typography variant="subtitle1">{elem.name}</Typography>
-          </Link>
-        ))}
+        <Box px={1}>
+          {dropdownContent?.map((elem: DropdownLink) => (
+            <Link to={`/${toRouterPath(tabName)}/${elem.path}`}>
+              <Typography variant="subtitle1">{elem.name}</Typography>
+            </Link>
+          ))}
+        </Box>
       </StyledMenu>
     </>
   );
@@ -99,7 +101,6 @@ const NavButton: React.FC<NavButtonProps> = ({ tabName, dropdownContent }) => {
 
 function NavigationBar() {
   const [name, set] = useState("Home");
-  const currentTab = { name, set };
 
   return (
     <Box
@@ -108,53 +109,56 @@ function NavigationBar() {
       mt={2}
       borderRadius={6}
       display="flex"
+      justifyContent="space-between"
     >
-      <Link to="/">
-        <IconButton style={{ marginRight: "8px" }}>
-          <HomeIcon />
-        </IconButton>
-      </Link>
-      <NavButton
-        tabName={"Code Projects"}
-        dropdownContent={[
-          {
-            name: "Website for Illinois Breastfeeding Mothers",
-            path: "breastfeeding-site",
-          },
-          {
-            name: "Visualizing p-adic Power Series in C++",
-            path: "padic-visualization",
-          },
-          {
-            name: "Data Analysis of CPD Racial Bais",
-            path: "cpd-racial-bias",
-          },
-          {
-            name: "This Website!",
-            path: "website",
-          },
-        ]}
-      />
-      <NavButton
-        tabName={"Research"}
-        dropdownContent={[
-          {
-            name: "Quantum Computing and Khovanov Homology",
-            path: "qcat",
-          },
-          {
-            name: "P-adic Numbers and the Artin Hasse Exponential",
-            path: "padic-artin-hasse",
-          },
-        ]}
-      />
-      <NavButton
-        tabName={"Games"}
-        dropdownContent={[
-          { name: "Tic-Tac-Toe", path: "tic-tac-toe" },
-          { name: "Chess", path: "chess" },
-        ]}
-      />
+      <Box>
+        <Link to="/">
+          <IconButton style={{ marginRight: "8px" }}>
+            <HomeIcon />
+          </IconButton>
+        </Link>
+        <NavButton
+          tabName={"Code Projects"}
+          dropdownContent={[
+            {
+              name: "Visualizing p-adic Power Series in C++",
+              path: "padic-visualization",
+            },
+            {
+              name: "Website for Illinois Breastfeeding Mothers",
+              path: "breastfeeding-site",
+            },
+            {
+              name: "Data Analysis of CPD Racial Bais",
+              path: "cpd-racial-bias",
+            },
+            {
+              name: "This Website!",
+              path: "website",
+            },
+          ]}
+        />
+        <NavButton
+          tabName={"Research"}
+          dropdownContent={[
+            {
+              name: "Quantum Computing and Khovanov Homology",
+              path: "qcat",
+            },
+            {
+              name: "P-adic Numbers and the Artin Hasse Exponential",
+              path: "padic-artin-hasse",
+            },
+          ]}
+        />
+        <NavButton
+          tabName={"Games"}
+          dropdownContent={[
+            { name: "Tic-Tac-Toe", path: "tic-tac-toe" },
+            { name: "Chess", path: "chess" },
+          ]}
+        />
+      </Box>
     </Box>
   );
 }

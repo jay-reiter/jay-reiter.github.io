@@ -1,4 +1,4 @@
-import ResearchElement from "./ResearchElement";
+import ResearchElement from "./research/ResearchElement";
 
 
 const PadicVisualization = () => {

@@ -8,6 +8,8 @@ import store from "./store";
 import theme from "./theme/theme";
 import ReactDOM from "react-dom";
 
+import ChessGame from "./games/ChessGame";
+import TicTacToeGame from "./games/TicTacToeGame";
 import "./index.css";
 
 ReactDOM.render(
@@ -19,16 +21,16 @@ ReactDOM.render(
           <TitleBar />
           <Switch>
             <Route exact path="/">
-              Hooome
+              <></>
             </Route>
             <Route exact path="/code-projects/padic-visualization">
               padic viz
             </Route>
             <Route exact path="/games/tic-tac-toe">
-              tictactoe
+              <TicTacToeGame />
             </Route>
             <Route exact path="/games/chess">
-              chess
+              <ChessGame />
             </Route>
           </Switch>
         </Router>

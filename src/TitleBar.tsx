@@ -1,13 +1,12 @@
 import {
   Avatar,
   Box,
-  Button,
-  ButtonBase,
   IconButton,
   Typography,
   useTheme,
   Tooltip,
   Link,
+  Button,
 } from "@material-ui/core";
 
 import github_png from "./assets/icons/github.png";
@@ -31,7 +30,11 @@ function TitleBar() {
             >
               Hello! I'm a Math and Computer Science student at UIUC. I built
               this website to show you some of the projects I'm working on and
-              stuff I'm interested in.
+              stuff I'm interested in. Here is my{" "}
+              <a href="/assets/resume.pdf" style={{ color: "blue" }}>
+                resume
+              </a>
+              .
             </Typography>
           </Box>
           <Box pt={1} display="flex" flexDirection="row">
@@ -64,38 +67,45 @@ function TitleBar() {
             >
               <img
                 src={profile_pic}
-                alt="Profile Picture"
+                alt="Profile"
                 height="120px"
                 width="120px"
               />
             </Avatar>
           </Box>
-          <Box
-            display="flex"
-            flexDirection="row"
-            justifyContent="space-around"
-            alignContent="flexStart"
-          >
-            <Tooltip title="My LinkedIn">
-              <IconButton disableRipple disableTouchRipple>
-                <img
-                  src={linkedin_png}
-                  alt="my_github"
-                  height="40px"
-                  width="40px"
-                />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="My Github">
-              <IconButton disableRipple disableTouchRipple>
-                <img
-                  src={github_png}
-                  alt="my_github"
-                  height="40px"
-                  width="40px"
-                />
-              </IconButton>
-            </Tooltip>
+          <Box display="flex" flexDirection="column" justifyContent="center">
+            <Box
+              display="flex"
+              flexDirection="row"
+              justifyContent="center"
+              alignContent="flexStart"
+            >
+              <Tooltip title="My LinkedIn">
+                <IconButton disableRipple disableTouchRipple>
+                  <img
+                    src={linkedin_png}
+                    alt="my_github"
+                    height="40px"
+                    width="40px"
+                  />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="My Github">
+                <IconButton disableRipple disableTouchRipple>
+                  <img
+                    src={github_png}
+                    alt="my_github"
+                    height="40px"
+                    width="40px"
+                  />
+                </IconButton>
+              </Tooltip>
+            </Box>
+            {/* <Box display="flex" justifyContent="center" width="100%" mr={4}>
+              <Button variant="outlined">
+                <Typography>Resume</Typography>
+              </Button>
+            </Box> */}
           </Box>
         </Box>
       </Box>
