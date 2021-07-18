@@ -1,12 +1,11 @@
 import React, { FC, useState } from 'react';
 import './ChessGame.css';
-import pieces from './assets/chess_assets/chess_images';
-import { determineMoves } from './assets/chess_assets/determineMoves'
-import Timer from './assets/chess_assets/chessTimer'
+import pieces from '../assets/chess_assets/chess_images';
+import { determineMoves } from '../assets/chess_assets/determineMoves'
+import Timer from '../assets/chess_assets/chessTimer'
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from './store';
-import allActions from './actions/actionsIndex';
-import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
+import { RootState } from '../store';
+import allActions from '../actions/actionsIndex';
 
 
 

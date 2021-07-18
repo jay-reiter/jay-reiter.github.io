@@ -1,5 +1,5 @@
 :root {
-  --piece_select: #00FFFB;
+  --piece_select: #00fffb;
   --piece_option: lime;
   --piece_capture: red;
 
@@ -46,7 +46,6 @@
 }
 
 .BoardTile {
-  
   min-width: 50px;
   min-height: 50px;
   font-size: 38px;
@@ -124,5 +123,4 @@
 
 .Timer {
   margin: 10px;
-  
 }

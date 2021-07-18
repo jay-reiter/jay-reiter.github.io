@@ -1,57 +1,107 @@
-import github_png from './assets/icons/github.png'
-import linkedin_png from './assets/icons/linkedin.png'
-import profile_pic from './assets/pictures/profile_pic.png'
+import {
+  Avatar,
+  Box,
+  Button,
+  ButtonBase,
+  IconButton,
+  Typography,
+  useTheme,
+  Tooltip,
+  Link,
+} from "@material-ui/core";
 
-function TitleBar () {
-    return (
-        <div id="title_bar">
-          <div id="info">
-              <div>
-                  <h1 className="info">Jay Reiter</h1>
-              </div>
-              <div>
-                    <h2 className="info">
-                      Hello! I'm a Math and Computer Science student at UIUC. I built this website to
-                      show you some of the projects I'm working on and stuff I'm interested in.
-                    </h2>
-              </div>
-              <div>
-                  <ul className="contacts">
-                      <li className="contacts">
-                            <a className="classic_link">
-                                jayr2@illinois.edu
-                            </a>
-                        </li>
-                      <li className="contacts">
-                          <a className="classic_link">
-                              (630) 487-0193
-                              </a>
-                    </li>
-                  </ul>
-              </div>
-              <br />
-              <div id="button" style={{clear: "left"}}>
-                  <a href="resume.pdf" target="_blank">
-                      Resume
-                  </a>
-              </div>
-          </div>
-          
-          <div id="icons">
-            <div style={{display:"flex", flexDirection:"column", alignItems: "center"}}>
-                <img src={profile_pic} alt="My Picture" style={{width: "70%"}} title="Me!"/>
-            </div>
-            <div style={{display: "flex", flexDirection: "row"}}>
-                <a href="https://github.com/jay-reiter" target="_blank">
-                            <img src={github_png} alt="My Github!" className="link_icon" title="My Github" />
-                </a>
-                <a href="https://www.linkedin.com/in/jayreiter1/" target="_blank">
-                    <img src={linkedin_png} alt="My Linkedin!" className="link_icon" title="My LinkedIn" />
-                </a>
-            </div>
-          </div>
-        </div>
-    );
+import github_png from "./assets/icons/github.png";
+import linkedin_png from "./assets/icons/linkedin.png";
+import profile_pic from "./assets/pictures/profile_pic.png";
+import NavigationBar from "./NavigationBar";
+
+function TitleBar() {
+  const theme = useTheme();
+  return (
+    <Box display="flex" flexDirection="column" width="100%">
+      <Box display="flex" flexDirection="row" justifyContent="space-between">
+        <Box display="flex" flexDirection="column" style={{ maxWidth: "80%" }}>
+          <Typography variant="h1" style={{ fontSize: "50pt" }}>
+            Jay Reiter
+          </Typography>
+          <Box mt={1}>
+            <Typography
+              variant="h5"
+              style={{ color: theme.palette.text.secondary }}
+            >
+              Hello! I'm a Math and Computer Science student at UIUC. I built
+              this website to show you some of the projects I'm working on and
+              stuff I'm interested in.
+            </Typography>
+          </Box>
+          <Box pt={1} display="flex" flexDirection="row">
+            <Link style={{ color: theme.palette.primary.contrastText }}>
+              <Typography variant="subtitle1">jayr2@illinois.edu</Typography>
+            </Link>
+            <Link
+              style={{
+                color: theme.palette.primary.contrastText,
+                paddingLeft: "16px",
+              }}
+            >
+              <Typography variant="subtitle1">(630) 487-0193</Typography>
+            </Link>
+          </Box>
+        </Box>
+        <Box
+          flexDirection="column"
+          justifyContent="center"
+          alignContent="flex-start"
+          style={{ maxWidth: "30%" }}
+        >
+          <Box display="flex" justifyContent="center">
+            <Avatar
+              style={{
+                width: "120px",
+                height: "120px",
+                backgroundColor: "transparent",
+              }}
+            >
+              <img
+                src={profile_pic}
+                alt="Profile Picture"
+                height="120px"
+                width="120px"
+              />
+            </Avatar>
+          </Box>
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="space-around"
+            alignContent="flexStart"
+          >
+            <Tooltip title="My LinkedIn">
+              <IconButton disableRipple disableTouchRipple>
+                <img
+                  src={linkedin_png}
+                  alt="my_github"
+                  height="40px"
+                  width="40px"
+                />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="My Github">
+              <IconButton disableRipple disableTouchRipple>
+                <img
+                  src={github_png}
+                  alt="my_github"
+                  height="40px"
+                  width="40px"
+                />
+              </IconButton>
+            </Tooltip>
+          </Box>
+        </Box>
+      </Box>
+      <NavigationBar />
+    </Box>
+  );
 }
 
 export default TitleBar;

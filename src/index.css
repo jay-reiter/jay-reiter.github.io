@@ -1,25 +1,28 @@
 /* Declare global variables for colors, etc. */
-@import './constants.css';
+@import "./constants.css";
 
-html{
+html {
   background-color: var(--color__backdrop);
   padding-top: 5%;
+  display: flex;
+  justify-content: center;
 }
-body{
+
+body {
   background-color: var(--color__body);
   color: var(--color__text);
 
   max-width: 100%;
   width: 900px;
-  
-  /* padding: 18px; */
+
+  padding: 18px;
   padding-top: 20px;
   border-radius: 5px;
+  display: flex;
 
-  overflow:auto;
-  margin:auto;
-  font-family: "Segoe UI", sans-serif;
-  /* box-shadow:2px 2px 100px; */
+  overflow: auto;
+  margin: auto;
+  box-shadow: 5px 5px 100px lightgray;
 }
 
 /* generic stuff */
@@ -41,14 +44,14 @@ body{
   clear: inline-start;
 }
 a.classic_link {
-  color: var(--color__highlight);    
+  color: var(--color__highlight);
 }
 a.classic_link:hover {
   color: var(--color__highlight);
   text-decoration: underline;
 }
 a {
-  all:unset;
+  all: unset;
 }
 
 #title_bar {
@@ -66,7 +69,7 @@ a {
 
   margin: 0;
   padding: 0;
-  clear:left;
+  clear: left;
 
   /* background-color: green; */
 }
@@ -83,7 +86,7 @@ h2.info {
   margin: 0px;
 
   font-size: large;
-  font-weight:500;
+  font-weight: 500;
   color: var(--color__subtitle);
 }
 ul.contacts {
@@ -95,7 +98,7 @@ ul.contacts {
   padding-top: 10px;
   padding-bottom: 10px;
 
-  font-size:medium;
+  font-size: medium;
 }
 li.contacts {
   display: block;
@@ -112,14 +115,14 @@ li.contacts {
   width: 20%;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   height: 100%;
 
   /* background-color: brown; */
 }
 img.link_icon {
-  max-width:30px;
-  max-height:30px;
+  max-width: 30px;
+  max-height: 30px;
   margin: 8px;
 }
 
@@ -144,7 +147,7 @@ h1.content_title {
   padding: 0px;
   margin: 0px;
 
-  float:left;
+  float: left;
 
   font-size: x-large;
   font-weight: bolder;
@@ -154,7 +157,7 @@ h1.content_title_small {
   padding: 0px;
   margin: 0px;
 
-  float:left;
+  float: left;
 
   font-size: large;
   font-weight: bold;
@@ -167,7 +170,6 @@ h2.content {
   font-size: large;
   font-weight: bold;
   color: var(--color__title);
-
 }
 
 /* for collapsible stuff */
@@ -186,7 +188,8 @@ h2.content {
 
   color: var(--color__text);
 }
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
   color: var(--color__highlight);
 }
 .collapsible_content {
@@ -197,7 +200,7 @@ h2.content {
   background-color: var(--color__box);
 }
 .collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: var(--color__body);
   float: right;
@@ -213,18 +216,18 @@ h2.content {
 }
 h1.section_header {
   color: var(--color__title);
-  
-  padding:0;
-  margin:0;
+
+  padding: 0;
+  margin: 0;
 
   margin-bottom: 8px;
 }
 p.section_header {
   color: var(--color__subtitle);
   font-size: medium;
-  
-  padding:0;
-  margin:0;
+
+  padding: 0;
+  margin: 0;
 
   margin-bottom: 8px;
 }

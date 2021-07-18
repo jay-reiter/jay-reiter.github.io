@@ -1,4 +1,4 @@
-import { getEmptyBoard } from '../../ChessGame'
+import { getEmptyBoard } from '../../games/ChessGame'
 
 /**
  * function to determine available moves of a given piece
