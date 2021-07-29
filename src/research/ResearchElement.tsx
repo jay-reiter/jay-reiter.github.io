@@ -1,21 +1,19 @@
-import './ResearchElement.css';
+// import "./ResearchElement.css";
+import React from "react";
+import { Typography, Box } from "@material-ui/core";
 
 interface ResearchElementProps {
-    title: string;
+  title: string;
 }
 
+const ResearchElement: React.FC<ResearchElementProps> = ({ title }) => {
+  return (
+    <>
+      <Box display="flex" justifyContent="center" m={2}>
+        <Typography variant="h3">{title}</Typography>
+      </Box>
+    </>
+  );
+};
 
-const ResearchElement: React.FC<ResearchElementProps> = ({
-    title,
-}) => {
-
-    return (
-        <>
-            <header className="App-header">
-                <h1>{title}</h1>
-            </header> 
-        </>
-    );
-}
-
-export default ResearchElement
+export default ResearchElement;

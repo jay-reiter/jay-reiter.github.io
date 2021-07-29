@@ -13,6 +13,7 @@ import github_png from "./assets/icons/github.png";
 import linkedin_png from "./assets/icons/linkedin.png";
 import profile_pic from "./assets/pictures/profile_pic.png";
 import NavigationBar from "./NavigationBar";
+import React from "react";
 
 function TitleBar() {
   const theme = useTheme();
@@ -31,19 +32,32 @@ function TitleBar() {
               Hello! I'm a Math and Computer Science student at UIUC. I built
               this website to show you some of the projects I'm working on and
               stuff I'm interested in. Here is my{" "}
-              <a href="/assets/resume.pdf" style={{ color: "blue" }}>
-                resume
+              <a href="/assets/resume.pdf">
+                <Link
+                  style={{
+                    color: theme.palette.primary.contrastText,
+                    cursor: "pointer",
+                  }}
+                >
+                  resume
+                </Link>
               </a>
               .
             </Typography>
           </Box>
           <Box pt={1} display="flex" flexDirection="row">
-            <Link style={{ color: theme.palette.primary.contrastText }}>
+            <Link
+              style={{
+                color: theme.palette.primary.contrastText,
+                cursor: "pointer",
+              }}
+            >
               <Typography variant="subtitle1">jayr2@illinois.edu</Typography>
             </Link>
             <Link
               style={{
                 color: theme.palette.primary.contrastText,
+                cursor: "pointer",
                 paddingLeft: "16px",
               }}
             >

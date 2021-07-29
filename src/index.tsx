@@ -11,6 +11,7 @@ import ReactDOM from "react-dom";
 import ChessGame from "./games/ChessGame";
 import TicTacToeGame from "./games/TicTacToeGame";
 import "./index.css";
+import PadicVisualization from "./code-projects/PadicVisualization";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,7 +25,7 @@ ReactDOM.render(
               <></>
             </Route>
             <Route exact path="/code-projects/padic-visualization">
-              padic viz
+              <PadicVisualization />
             </Route>
             <Route exact path="/games/tic-tac-toe">
               <TicTacToeGame />
