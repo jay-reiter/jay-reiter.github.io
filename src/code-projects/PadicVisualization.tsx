@@ -1,18 +1,20 @@
 import ResearchElement from "../research/ResearchElement";
 import React from "react";
-import { Box, List, ListItem, Typography } from "@material-ui/core";
+import { Box, Link, List, ListItem, Typography } from "@material-ui/core";
 import { MathComponent } from "mathjax-react";
+
 import theme from "../theme/theme";
 
 const PadicVisualization = () => {
   return (
     <>
       <ResearchElement title={"P-Adic Visualization in C++"} />
-      <Box display='flex'>
+      <Box display='flex' justifyContent='space-around'>
         <Box
           p={2}
           m={0.5}
           bgcolor={theme.palette.secondary.main}
+          width='42%'
           borderRadius='8px'
           display='flex'
           flexDirection='column'
@@ -33,6 +35,7 @@ const PadicVisualization = () => {
           m={0.5}
           bgcolor={theme.palette.secondary.main}
           borderRadius='8px'
+          width='42%'
           display='flex'
           flexDirection='column'
         >
@@ -50,7 +53,9 @@ const PadicVisualization = () => {
         </Box>
       </Box>
       <Box m={2}>
-        <Typography variant='h5'>The Library</Typography>
+        <Typography variant='h4' gutterBottom>
+          My Library
+        </Typography>
         <Typography>
           This is a C++ library I wrote from the ground up to do arithmetic with
           p-adic numbers, evaluate p-adic power series to arbitrary precision,
@@ -59,7 +64,7 @@ const PadicVisualization = () => {
           real-valued functions in the p-adics.
         </Typography>
       </Box>
-      <Box m={2}>
+      <Box m={2} display='flex' flexDirection='column'>
         <Typography variant='h6'>p-adic Arithmetic:</Typography>
         <Typography>
           The library introduces a p-adic datatype that supports addition,
@@ -68,13 +73,22 @@ const PadicVisualization = () => {
           computing multiplicative inverses myself--it is done to n digits of
           accuracy in O(n) time. Below are some sample computations:
         </Typography>
-        <img
-          src='../assets/pictures/p-adic-sample-computations.png'
-          alt='p-adic sample computations'
-        />
+        <Box
+          p={2}
+          my={2}
+          bgcolor='black'
+          borderRadius='16px'
+          justifySelf='center'
+        >
+          <img
+            src='https://github.com/jay-reiter/jay-reiter.github.io/blob/master/src/assets/pictures/p-adic-sample-computations.png?raw=true'
+            alt='p-adic sample computations'
+            style={{ maxWidth: "400px" }}
+          />
+        </Box>
       </Box>
       <Box m={2}>
-        <Typography variant='h6'>Power Series Evaluation</Typography>
+        <Typography variant='h6'>Power Series Evaluation:</Typography>
         <Typography>
           The library can evaluate any p-adic power series at any point; the
           user just supplies a callback function for the coefficients and a
@@ -82,6 +96,39 @@ const PadicVisualization = () => {
           accuracy. For exp(x), the evaluation to n digits of accuracy is done
           in O(n^3) time.
         </Typography>
+      </Box>
+      <Box m={2}>
+        <Typography variant='h6'>Plotting on Image of Zp:</Typography>
+        <Typography>
+          The arbitrary power series, f, can then be plotted on a fractal image
+          of the additive cosets of Zp which exactly correspond to the digits of
+          p-adic numbers, read from right to left. To show how the function
+          varies for different inputs, I made animations (seen above) that cycle
+          consecutive values of x and the corresponding values of f(x).
+        </Typography>
+      </Box>
+      <Box m={2}>
+        <Typography variant='h4' gutterBottom>
+          My Paper
+        </Typography>
+        <Typography>
+          To read the details of my multiplicative inverse algorithm, a rigorous
+          complexity analysis of power series evaluation, and my plotting
+          methodology, you can view my paper below. The source code for this
+          whole project, as well as some more visuals are available on my{" "}
+          <a href='https://github.com/jay-reiter/p-adic-power-series-visualization'>
+            <Link
+              style={{
+                color: theme.palette.primary.contrastText,
+                cursor: "pointer",
+              }}
+            >
+              GitHub
+            </Link>
+          </a>
+          .
+        </Typography>
+        <iframe src='./p-adic-cpp-lib.pdf' />
       </Box>
     </>
   );

@@ -65,10 +65,10 @@ const NavButton: React.FC<NavButtonProps> = ({ tabName, dropdownContent }) => {
   return (
     <>
       <Button
-        aria-controls="customized-menu"
-        aria-haspopup="true"
-        variant="contained"
-        color="primary"
+        aria-controls='customized-menu'
+        aria-haspopup='true'
+        variant='contained'
+        color='primary'
         onClick={handleClick}
         style={{
           backgroundColor: "transparent",
@@ -81,16 +81,18 @@ const NavButton: React.FC<NavButtonProps> = ({ tabName, dropdownContent }) => {
         </Box>
       </Button>
       <StyledMenu
-        id="customized-menu"
+        id='customized-menu'
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <Box px={1} onClick={handleClose}>
+        <Box onClick={handleClose}>
           {dropdownContent?.map((elem: DropdownLink) => (
             <Link to={`/${toRouterPath(tabName)}/${elem.path}`}>
-              <Typography variant="subtitle1">{elem.name}</Typography>
+              <MenuItem>
+                <Typography variant='subtitle1'>{elem.name}</Typography>
+              </MenuItem>
             </Link>
           ))}
         </Box>
@@ -104,15 +106,15 @@ function NavigationBar() {
 
   return (
     <Box
-      style={{ width: "100%", backgroundColor: theme.palette.grey[300] }}
+      style={{ width: "100%", backgroundColor: theme.palette.grey[200] }}
       p={1}
       mt={2}
       borderRadius={6}
-      display="flex"
-      justifyContent="space-between"
+      display='flex'
+      justifyContent='space-between'
     >
       <Box>
-        <Link to="/">
+        <Link to='/'>
           <IconButton style={{ marginRight: "8px" }}>
             <HomeIcon />
           </IconButton>
