@@ -1,4 +1,4 @@
-import ResearchElement from "../research/ResearchElement";
+import ResearchElement from "../components/ResearchElement";
 import React from "react";
 import { Box, Link, List, ListItem, Typography } from "@material-ui/core";
 import { MathComponent } from "mathjax-react";
@@ -8,7 +8,11 @@ import theme from "../theme/theme";
 const PadicVisualization = () => {
   return (
     <>
-      <ResearchElement title={"P-Adic Visualization in C++"} />
+      <ResearchElement
+        title={"P-Adic Visualization in C++"}
+        startDate={"March 2021"}
+        endDate={"May 2021"}
+      />
       <Box display='flex' justifyContent='space-around'>
         <Box
           p={2}
@@ -128,7 +132,7 @@ const PadicVisualization = () => {
           </a>
           .
         </Typography>
-        <iframe src='./p-adic-cpp-lib.pdf' />
+        <iframe src='../assets/papers/p-adic-cpp-lib.pdf' />
       </Box>
     </>
   );

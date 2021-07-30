@@ -131,12 +131,12 @@ function NavigationBar() {
               path: "breastfeeding-site",
             },
             {
-              name: "Data Analysis of CPD Racial Bais",
-              path: "cpd-racial-bias",
-            },
-            {
               name: "This Website!",
               path: "website",
+            },
+            {
+              name: "Other Stuff",
+              path: "other-stuff",
             },
           ]}
         />

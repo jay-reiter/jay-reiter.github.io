@@ -11,7 +11,13 @@ import ReactDOM from "react-dom";
 import ChessGame from "./games/ChessGame";
 import TicTacToeGame from "./games/TicTacToeGame";
 import "./index.css";
+
 import PadicVisualization from "./code-projects/PadicVisualization";
+import BreastfeedingSite from "./code-projects/BreastfeedingSite";
+import ThisWebsite from "./code-projects/ThisWebsite";
+import OtherStuff from "./code-projects/OtherStuff";
+import QCaT from "./research/qcat";
+import PadicAH from "./research/PadicAH";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,16 +27,34 @@ ReactDOM.render(
         <Router>
           <TitleBar />
           <Switch>
-            <Route exact path="/">
+            <Route exact path='/'>
               <></>
             </Route>
-            <Route exact path="/code-projects/padic-visualization">
+
+            <Route exact path='/code-projects/padic-visualization'>
               <PadicVisualization />
             </Route>
-            <Route exact path="/games/tic-tac-toe">
+            <Route exact path='/code-projects/breastfeeding-site'>
+              <BreastfeedingSite />
+            </Route>
+            <Route exact path='/code-projects/website'>
+              <ThisWebsite />
+            </Route>
+            <Route exact path='/code-projects/other-stuff'>
+              <OtherStuff />
+            </Route>
+
+            <Route exact path='/research/qcat'>
+              <QCaT />
+            </Route>
+            <Route exact path='/research/padic-artin-hasse'>
+              <PadicAH />
+            </Route>
+
+            <Route exact path='/games/tic-tac-toe'>
               <TicTacToeGame />
             </Route>
-            <Route exact path="/games/chess">
+            <Route exact path='/games/chess'>
               <ChessGame />
             </Route>
           </Switch>
