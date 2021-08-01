@@ -2,6 +2,7 @@ import ResearchElement from "../components/ResearchElement";
 import React from "react";
 import { Box, Link, List, ListItem, Typography } from "@material-ui/core";
 import { MathComponent } from "mathjax-react";
+import { Document } from "react-pdf";
 
 import theme from "../theme/theme";
 
