@@ -58,9 +58,9 @@ const HomePage = () => {
           </Alert>
           <Typography variant='body1'>
             I am constantly working to add all the content I want to share, but
-            there's a lot to do, so not all the pages are currently filled out!
+            there's a lot to do, so not all the pages are currently filled out.
             Of course, if there's anything you want to know more about, I am
-            more than happy to answer your questions!
+            more than happy to answer your questions :)
           </Typography>
           <Box my={4}>
             <Typography variant='h5' gutterBottom>
@@ -116,10 +116,10 @@ const HomePage = () => {
                   math problems I thought were cool, me playing cello, and
                   little JavaScript games I've built will be on here!
                   <br />
-                  <br />I built this site using React, TypeScript, Material-UI,
-                  and NEXT.js. It is currently being hosted using GitHub pages!
-                  Of course, the best way to learn about what I've done with
-                  this site is to have a look around!
+                  <br />I built this site from scratch using React, TypeScript,
+                  Material-UI, and NEXT.js. It is currently being hosted using
+                  GitHub pages. Of course, the best way to learn about what I've
+                  done with this site is to have a look around!
                 </>
               }
             />
@@ -129,8 +129,11 @@ const HomePage = () => {
               title='Website for Breastfeeding Mothers in Illinois'
               img={milkmap}
               subtitle={``}
-              startDate='June 2021'
+              startDate='August 2020'
               endDate='Present'
+              organization='Design for America, UIUC'
+              location='Urbana, IL'
+              externalLink='https://dfaillinois.com/'
               descriptionTitle='What we are doing'
               description={
                 <>
