@@ -107,7 +107,7 @@ const BoardTile: FC<TileProps> = (props): JSX.Element => (
   >
     {/* display game piece on tile */}
     {props.gamePiece ? (
-      <img src={pieces.get(props.gamePiece)} alt={""} className="Piece" />
+      <img src={pieces.get(props.gamePiece)} alt={""} className='Piece' />
     ) : null}
   </button>
 );
@@ -177,63 +177,66 @@ function ChessGame() {
   }
 
   return (
-    <Box m={8}>
-      <Box
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div className="ChessBoard">
-          {utils.range(0, 63).map((n) => (
-            <BoardTile
-              x={n % 8}
-              y={(n - (n % 8)) / 8}
-              gamePiece={boardState[n % 8][(n - (n % 8)) / 8]}
-              changeSymbol={() => null}
-              currentPlayer={currentPlayer}
-              setCurrentPlayer={setCurrentPlayer}
-              boardState={boardState}
-              setBoardState={setBoardState}
-              boardSelector={boardSelector}
-              setBoardSelector={setBoardSelector}
-            />
-          ))}
-        </div>
-
-        <div className="SideBar">
-          <Typography variant="h5">
-            {currentPlayer.charAt(0).toUpperCase() + currentPlayer.slice(1)}
-            's Turn
-          </Typography>
-          <div className="TimerBox">
-            <div className="Timer">
-              <Typography>White:</Typography>
-              <Timer
-                startMinutes={GAME_DURATION}
-                startSeconds={0}
-                run={currentPlayer === "white"}
+    <>
+      <Typography>Play Chess (WIP)</Typography>
+      <Box m={8}>
+        <Box
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div className='ChessBoard'>
+            {utils.range(0, 63).map((n) => (
+              <BoardTile
+                x={n % 8}
+                y={(n - (n % 8)) / 8}
+                gamePiece={boardState[n % 8][(n - (n % 8)) / 8]}
+                changeSymbol={() => null}
+                currentPlayer={currentPlayer}
+                setCurrentPlayer={setCurrentPlayer}
+                boardState={boardState}
+                setBoardState={setBoardState}
+                boardSelector={boardSelector}
+                setBoardSelector={setBoardSelector}
               />
-            </div>
-            <div className="Timer">
-              <Typography>Black:</Typography>
-              <Timer
-                startMinutes={GAME_DURATION}
-                startSeconds={0}
-                run={currentPlayer === "black"}
-              />
-            </div>
+            ))}
           </div>
-          <Button
-            variant="outlined"
-            onClick={() => dispatch(allActions.chessActions.reset("reset"))}
-          >
-            Reset Game
-          </Button>
-        </div>
+
+          <div className='SideBar'>
+            <Typography variant='h5'>
+              {currentPlayer.charAt(0).toUpperCase() + currentPlayer.slice(1)}
+              's Turn
+            </Typography>
+            <div className='TimerBox'>
+              <div className='Timer'>
+                <Typography>White:</Typography>
+                <Timer
+                  startMinutes={GAME_DURATION}
+                  startSeconds={0}
+                  run={currentPlayer === "white"}
+                />
+              </div>
+              <div className='Timer'>
+                <Typography>Black:</Typography>
+                <Timer
+                  startMinutes={GAME_DURATION}
+                  startSeconds={0}
+                  run={currentPlayer === "black"}
+                />
+              </div>
+            </div>
+            <Button
+              variant='outlined'
+              onClick={() => dispatch(allActions.chessActions.reset("reset"))}
+            >
+              Reset Game
+            </Button>
+          </div>
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 }
 

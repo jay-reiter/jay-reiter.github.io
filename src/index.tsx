@@ -18,6 +18,7 @@ import ThisWebsite from "./code-projects/ThisWebsite";
 import OtherStuff from "./code-projects/OtherStuff";
 import QCaT from "./research/qcat";
 import PadicAH from "./research/PadicAH";
+import HomePage from "./HomePage";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,7 +29,7 @@ ReactDOM.render(
           <TitleBar />
           <Switch>
             <Route exact path='/'>
-              <></>
+              <HomePage />
             </Route>
 
             <Route exact path='/code-projects/padic-visualization'>

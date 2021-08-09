@@ -2,8 +2,6 @@ import ResearchElement from "../components/ResearchElement";
 import React from "react";
 import { Box, Link, List, ListItem, Typography } from "@material-ui/core";
 import { MathComponent } from "mathjax-react";
-import { Document } from "react-pdf";
-
 import theme from "../theme/theme";
 
 const PadicVisualization = () => {
@@ -133,7 +131,14 @@ const PadicVisualization = () => {
           </a>
           .
         </Typography>
-        <iframe src='../assets/papers/p-adic-cpp-lib.pdf' />
+        <Box my={3}>
+          <iframe
+            src='https://drive.google.com/file/d/1cbveCiqHgk3Ciolbel4yZPB3zP3FN42Z/preview'
+            width='100%'
+            height='500'
+            allow='autoplay'
+          ></iframe>
+        </Box>
       </Box>
     </>
   );

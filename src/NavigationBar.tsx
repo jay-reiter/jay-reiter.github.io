@@ -123,7 +123,7 @@ function NavigationBar() {
           tabName={"Code Projects"}
           dropdownContent={[
             {
-              name: "Visualizing p-adic Power Series in C++",
+              name: "P-adic Visualization Library in C++",
               path: "padic-visualization",
             },
             {
