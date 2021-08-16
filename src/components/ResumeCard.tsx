@@ -19,6 +19,7 @@ import {
   ListItemText,
   Icon,
   Divider,
+  CardHeader,
 } from "@material-ui/core";
 
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
@@ -250,6 +251,33 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
         </Fade>
       </Modal>
     </>
+  );
+};
+
+interface ResumeCardGroupProps {
+  title: string;
+  cards: any[];
+}
+
+export const ResumeCardGroup: React.FC<ResumeCardGroupProps> = ({
+  title,
+  cards,
+}) => {
+  return (
+    <Box display='flex' flexDirection='column' maxHeight='600px'>
+      <Typography variant='h4' gutterBottom>
+        {title}
+      </Typography>
+      <Divider style={{ marginBottom: "8px" }} />
+
+      <Grid container spacing={2} justifyContent='flex-start'>
+        {cards.map((elem) => (
+          <Grid item xs={6}>
+            {elem}
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 };
 
