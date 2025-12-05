@@ -1,15 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import { Route, BrowserRouter, Routes, Link } from "react-router-dom";
+
+import "./style-sheets/index.css";
+import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
+
+import HomePage from "./pages/HomePage";
+import MathPage from "./pages/MathPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/math" element={<MathPage/>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
