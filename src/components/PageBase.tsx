@@ -1,6 +1,8 @@
-import { Box, Container } from "@mui/material";
-import NavBar from "./NavBar.tsx";
 import React from "react";
+import { Box, Grid } from "@mui/material";
+import { AspectRatio } from "@mui/joy";
+
+import NavBar from "./NavBar.tsx";
 
 import mtrainier from "../assets/mt-rainier.png";
 
@@ -10,18 +12,35 @@ type PageBaseProps = {
 
 const PageBase: React.FC<PageBaseProps> = ({ children }) => {
   return (
-    <Container sx={{ width: 1 }}>
-      <Box
-        sx={{
-          width: 1,
-          height: 0.4,
-        }}
-        component='img'
-        src={mtrainier}
-      />
-      <NavBar />
-      <Box sx={{ width: 0.75 }}>{children}</Box>
-    </Container>
+    <Grid
+      maxWidth={1}
+      container
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <Box width={1} position='relative'>
+        <AspectRatio objectFit='cover' minHeight={300} maxHeight={300}>
+          <img src={mtrainier} />
+        </AspectRatio>
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            bgcolor: "rgba(255, 255, 255, 0.5)",
+          }}
+        />
+      </Box>
+
+      <Box width={0.8} alignSelf='center'>
+        <NavBar />
+        {children}
+      </Box>
+    </Grid>
   );
 };
 
