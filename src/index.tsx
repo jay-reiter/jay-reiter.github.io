@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { Route, BrowserRouter, Routes, Link } from "react-router-dom";
 
 import "./style-sheets/index.css";
-import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 
 import HomePage from "./pages/HomePage";
@@ -16,8 +15,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/math" element={<MathPage/>} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/math' element={<MathPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

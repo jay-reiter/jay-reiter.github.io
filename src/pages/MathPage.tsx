@@ -1,17 +1,12 @@
-import { Box, Typography } from "@mui/material"
-import NavBar from "../components/ResponsiveAppBar"
-
+import { Box, Typography } from "@mui/material";
+import PageBase from "../components/PageBase";
 
 const MathPage = () => {
-    return (
-        <Box>
-            <NavBar />
-            <Typography>
-                Hello this is the math page
-            </Typography>
-        </Box>
-        
-    )
-}
+  return (
+    <PageBase>
+      <Typography>Hello this is the math page</Typography>
+    </PageBase>
+  );
+};
 
-export default MathPage
+export default MathPage;
