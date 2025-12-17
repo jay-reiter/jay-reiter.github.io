@@ -7,16 +7,17 @@ import reportWebVitals from "./reportWebVitals";
 
 import HomePage from "./pages/HomePage";
 import MathPage from "./pages/MathPage";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { CssVarsProvider } from "@mui/joy/styles";
 
 import theme from "./theme/theme";
+import { CssBaseline } from "@mui/joy";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <CssVarsProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
         <Routes>
@@ -24,7 +25,7 @@ root.render(
           <Route path='/math' element={<MathPage />} />
         </Routes>
       </BrowserRouter>
-    </ThemeProvider>
+    </CssVarsProvider>
   </React.StrictMode>
 );
 

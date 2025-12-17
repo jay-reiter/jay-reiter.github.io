@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
-import { AspectRatio } from "@mui/joy";
+import { AspectRatio, Divider } from "@mui/joy";
 
 import NavBar from "./NavBar.tsx";
 
@@ -36,9 +36,17 @@ const PageBase: React.FC<PageBaseProps> = ({ children }) => {
         />
       </Box>
 
-      <Box width={0.8} alignSelf='center'>
-        <NavBar />
-        {children}
+      <Box width={0.65} alignSelf='center'>
+        <Box
+          alignSelf='center'
+          display='flex'
+          flexDirection='column'
+          alignItems='center'
+        >
+          <NavBar />
+          <Box my={4}>{children}</Box>
+          <Divider />
+        </Box>
       </Box>
     </Grid>
   );

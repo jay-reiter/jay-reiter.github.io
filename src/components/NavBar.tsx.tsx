@@ -1,18 +1,23 @@
-import { Box, Stack } from "@mui/material";
-import NavButton from "./NavButton";
+import { Box, ButtonGroup, Button } from "@mui/joy";
+
 
 const NavBar = () => {
   return (
-    <Box sx={{ width: 1 }}>
-      <Stack direction='row' spacing={4} justifyContent='flex-end'>
-        <NavButton buttonName='Home' targetPath='/' />
-        <NavButton buttonName='Math' targetPath='/math' />
-        <NavButton buttonName='Teaching' targetPath='/teaching' />
-        <NavButton
-          buttonName='DubTop Fall 2025'
-          targetPath='/dubtop-fall-2025'
-        />
-      </Stack>
+    <Box width={1} my={1}>
+      <ButtonGroup variant='plain' sx={{ float: "right" }}>
+        <Button component='a' href='/' variant='plain'>
+          Home
+        </Button>
+        <Button component='a' href='/math' variant='plain'>
+          Math
+        </Button>
+        <Button component='a' href='/teaching' variant='plain'>
+          Teaching
+        </Button>
+        <Button component='a' href='/dubtop-fall-2025' variant='plain'>
+          DubTop Fall 2025
+        </Button>
+      </ButtonGroup>
     </Box>
   );
 };
