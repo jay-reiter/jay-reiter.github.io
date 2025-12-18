@@ -29,9 +29,10 @@ const theme = extendTheme({
           800: "#0041A5",
           900: "#0041A5",
           plainColor: "#0041A5",
+          plainBg: "#FFF",
+          plainHoverBg: "#FAFAFA",
+          plainActiveBg: "#F5F5F5",
           plainDisabledColor: "#CFCFCF",
-          plainHoverBg: "#FFF",
-          plainActiveBg: "#FFF",
         },
         secondary: {
           50: "#00c382",

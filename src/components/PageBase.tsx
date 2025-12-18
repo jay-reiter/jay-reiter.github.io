@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import { AspectRatio, Divider } from "@mui/joy";
 
-import NavBar from "./NavBar.tsx";
+import NavBar from "./NavBar";
 
-import mtrainier from "../assets/mt-rainier.png";
+import mtrainier from "../assets/pictures/mt-rainier.png";
 
 type PageBaseProps = {
   children?: React.ReactNode;
@@ -36,7 +36,7 @@ const PageBase: React.FC<PageBaseProps> = ({ children }) => {
         />
       </Box>
 
-      <Box width={0.65} alignSelf='center'>
+      <Box width={0.9} alignSelf='center'>
         <Box
           alignSelf='center'
           display='flex'
@@ -44,8 +44,9 @@ const PageBase: React.FC<PageBaseProps> = ({ children }) => {
           alignItems='center'
         >
           <NavBar />
-          <Box my={4}>{children}</Box>
-          <Divider />
+          <Box width={0.9} my={4} alignItems='center'>
+            {children}
+          </Box>
         </Box>
       </Box>
     </Grid>

@@ -17,6 +17,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "mathjax-react": "^2.0.1",
     "mui": "^0.0.1",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
