@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.e24630a6.js",
-    "static/js/453.b5913093.chunk.js": "/static/js/453.b5913093.chunk.js",
+    "main.css": "/static/css/main.897d4e89.css",
+    "main.js": "/static/js/main.df6dc63c.js",
+    "static/js/453.a22d2b6c.chunk.js": "/static/js/453.a22d2b6c.chunk.js",
+    "static/media/mt-rainier.png": "/static/media/mt-rainier.54f17ed7574bb5d7468c.png",
+    "static/media/pic-of-me.png": "/static/media/pic-of-me.9027709ab383b534233a.png",
     "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.e24630a6.js.map": "/static/js/main.e24630a6.js.map",
-    "453.b5913093.chunk.js.map": "/static/js/453.b5913093.chunk.js.map"
+    "main.897d4e89.css.map": "/static/css/main.897d4e89.css.map",
+    "main.df6dc63c.js.map": "/static/js/main.df6dc63c.js.map",
+    "453.a22d2b6c.chunk.js.map": "/static/js/453.a22d2b6c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e24630a6.js"
+    "static/css/main.897d4e89.css",
+    "static/js/main.df6dc63c.js"
   ]
 }
