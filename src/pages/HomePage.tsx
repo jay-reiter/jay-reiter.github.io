@@ -1,5 +1,5 @@
-import { Box, Typography, AspectRatio, Link } from "@mui/joy";
-import PageBase from "../components/PageBase";
+import { Box, Typography, Link } from "@mui/joy";
+import PageSkeleton from "../components/PageSkeleton";
 
 import picOfMe from "../assets/pictures/pic-of-me.png";
 import ContentBlock from "../components/ContentBlock";
@@ -7,7 +7,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <PageBase>
+    <PageSkeleton>
       <ContentBlock>
         <Box
           sx={{
@@ -74,7 +74,7 @@ const HomePage = () => {
             <Typography level='body-md' mt={1} gutterBottom>
               Me and my cat,{" "}
               <RouterLink to='/scully'>
-                <Link>Scully</Link>
+                <Link disabled>Scully</Link>
               </RouterLink>
               .
             </Typography>
@@ -89,7 +89,7 @@ const HomePage = () => {
           .
         </Typography>
       </ContentBlock>
-    </PageBase>
+    </PageSkeleton>
   );
 };
 

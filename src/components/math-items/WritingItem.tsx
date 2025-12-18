@@ -12,15 +12,17 @@ const WritingItem = ({ title, path, date, children }: WritingItemProps) => {
   return (
     <Box my={3}>
       <Typography level='title-md' fontStyle='italic'>
-        <Typography fontWeight='600'>
-          <Link href={path} underline='always'>
+        <Typography fontWeight='700'>
+          <Link href={path} underline='always' target='_blank' rel='noreferrer'>
             {title}
           </Link>
         </Typography>
         <Typography fontWeight='400'> -- {date}</Typography>
       </Typography>
 
-      <Typography level='body-md'>{children}</Typography>
+      <Typography level='body-sm' textColor='black'>
+        {children}
+      </Typography>
     </Box>
   );
 };

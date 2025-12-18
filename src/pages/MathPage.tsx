@@ -1,18 +1,141 @@
 import { Box, List, ListItem, Typography } from "@mui/joy";
-import PageBase from "../components/PageBase";
+import PageSkeleton from "../components/PageSkeleton";
 import ContentBlock from "../components/ContentBlock";
 import WritingItem from "../components/math-items/WritingItem";
 import { MathComponent } from "mathjax-react";
+import TravelItem from "../components/math-items/TravelItem";
+import TalkItem from "../components/math-items/TalkItem";
 
 const MathPage = () => {
+  const travelItems = [
+    <TravelItem
+      title='European Autumn School in Topology'
+      date='September 2025'
+      location='Utrecht, Netherlands'
+    />,
+    <TravelItem
+      title='European Talbot'
+      date='July 2025'
+      location='Kolding, Denmark'
+    />,
+    <TravelItem
+      title='Western Algebraic Geometry Symposium'
+      date='April 2025'
+      location='UBC, Vancouver, Canada'
+    />,
+    <TravelItem
+      title='Joint Math Meetings'
+      date='January 2025'
+      location='Seattle, WA'
+    />,
+    <TravelItem
+      title='Life After the Telescope Conjecture'
+      date='December 2024'
+      location='SL Math, Berkeley, CA'
+    />,
+    <TravelItem title='eCHT Kan Seminar' date='Fall 2024' location='Online' />,
+    <TravelItem
+      title='Joint Math Meetings'
+      date='January 2023'
+      location='Boston, MA'
+    />,
+  ];
+  const externalTalks = [
+    <TalkItem
+      title={
+        <>
+          Adams: on the groups{" "}
+          <MathComponent tex={String.raw`J(X)`} display={false} /> -- IV
+        </>
+      }
+      seminar='eCHT Kan Seminar'
+      date='Fall 2024'
+      link='https://s.wayne.edu/echt/echt-reading-seminars/kan-seminar-fall-2024/'
+    />,
+  ];
+  const internalTalks = [
+    <TalkItem
+      title={
+        <>
+          Deformations of stable{" "}
+          <MathComponent tex={String.raw`\infty`} display={false} />
+          -categories
+        </>
+      }
+      seminar='DubTop'
+      date='Fall 2025'
+      link=''
+    />,
+    <TalkItem
+      title='Chromatic homotopy theory and the moduli of formal groups'
+      seminar='Writing Milestone Seminar'
+      date='Spring 2025'
+      link='https://sites.math.washington.edu/~zawadx/milestone_sem.html'
+    />,
+    <TalkItem
+      title='Descent, derived descent, and the Adams spectral sequence'
+      seminar='1-2-3 Seminar'
+      date='Spring 2025'
+      link='https://math.washington.edu/events/2025-05-16/1-2-3-seminar-descent-derived-descent-and-adams-spectral-sequence'
+    />,
+    <TalkItem
+      title='Sites and stacks'
+      seminar='DubTop Seminar'
+      date='Winter 2025'
+      link='https://sites.google.com/view/dubtopseminar/previous-quarters/winter-2025'
+    />,
+    <TalkItem
+      title={
+        <>
+          The Hopf algebroid{" "}
+          <MathComponent
+            tex={String.raw`(\text{MU}_*,\,\text{MU}_*\text{MU})`}
+            display={false}
+          />{" "}
+          and formal groups
+        </>
+      }
+      seminar='DubTop Seminar'
+      date='Winter 2025'
+      link='https://sites.google.com/view/dubtopseminar/previous-quarters/winter-2025'
+    />,
+    <TalkItem
+      title='Foundations of Goodwillie calculus, II'
+      seminar='DubTop Seminar'
+      date='Fall 2024'
+      link='https://sites.google.com/view/dubtopseminar/previous-quarters/fall-2024'
+    />,
+    <TalkItem
+      title='Computing bordism rings with homotopy theory'
+      seminar='Back to School Seminar'
+      date='Fall 2024'
+      link='https://sites.google.com/view/jacksonmorris/seminars-organized/fall-2024-back-to-school-seminar?authuser=0'
+    />,
+    <TalkItem
+      title='The Hopf invariant'
+      seminar='Cohomology Operations'
+      date='Spring 2024'
+      link='https://sites.google.com/view/jacksonmorris/seminars-organized/spring-2024-cohomology-operations?authuser=0'
+    />,
+    <TalkItem
+      title='Construction of the Steenrod squares'
+      seminar='Cohomology Operations'
+      date='Spring 2024'
+      link='https://sites.google.com/view/jacksonmorris/seminars-organized/spring-2024-cohomology-operations?authuser=0'
+    />,
+    <TalkItem
+      title='Introduction to Khovanov homology'
+      seminar='Arxiv Seminar'
+      date='Winter 2024'
+      link=''
+    />,
+  ];
+
   return (
-    <PageBase>
+    <PageSkeleton>
       <ContentBlock>
-        <Typography level='h2' mb={2} color='primary' fontWeight='500'>
-          Writing
-        </Typography>
-        <Typography level='h3' mb={2} color='primary' fontWeight='300'>
-          Expository
+        <Typography level='h3' color='primary' fontWeight='500'>
+          Expository Writing
         </Typography>
         <WritingItem
           title={
@@ -49,32 +172,37 @@ const MathPage = () => {
         </WritingItem>
       </ContentBlock>
       <ContentBlock>
-        <Typography level='h2' gutterBottom color='primary' fontWeight='500'>
-          Travel
+        <Typography level='h3' gutterBottom color='primary' fontWeight='500'>
+          Conferences and Workshops
         </Typography>
-        <List>
-          <ListItem>
-            <Typography>Place 1</Typography>
-          </ListItem>
-          <ListItem>
-            <Typography>Place 2</Typography>
-          </ListItem>
+        <List marker='square'>
+          {travelItems.map((item) => {
+            return <ListItem>{item}</ListItem>;
+          })}
         </List>
       </ContentBlock>
       <ContentBlock>
-        <Typography level='h2' gutterBottom color='primary' fontWeight='500'>
+        <Typography level='h3' gutterBottom color='primary' fontWeight='500'>
           Talks
         </Typography>
-        <List>
-          <ListItem>
-            <Typography>Talk 1</Typography>
-          </ListItem>
-          <ListItem>
-            <Typography>Talk 2</Typography>
-          </ListItem>
+        <Typography level='h4' gutterBottom color='primary' fontWeight='300'>
+          External Talks
+        </Typography>
+        <List marker='square'>
+          {externalTalks.map((item) => {
+            return <ListItem>{item}</ListItem>;
+          })}
+        </List>
+        <Typography level='h4' gutterBottom color='primary' fontWeight='300'>
+          Talks at UW Graduate Student Seminars
+        </Typography>
+        <List marker='square'>
+          {internalTalks.map((item) => {
+            return <ListItem>{item}</ListItem>;
+          })}
         </List>
       </ContentBlock>
-    </PageBase>
+    </PageSkeleton>
   );
 };
 

@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import "./style-sheets/index.css";
 import reportWebVitals from "./reportWebVitals";
-
-import HomePage from "./pages/HomePage";
-import MathPage from "./pages/MathPage";
 import { CssVarsProvider } from "@mui/joy/styles";
 
 import theme from "./theme/theme";
 import { CssBaseline } from "@mui/joy";
+import Router from "./components/Router";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -19,12 +16,7 @@ root.render(
   <React.StrictMode>
     <CssVarsProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/math' element={<MathPage />} />
-        </Routes>
-      </BrowserRouter>
+      <Router />
     </CssVarsProvider>
   </React.StrictMode>
 );
