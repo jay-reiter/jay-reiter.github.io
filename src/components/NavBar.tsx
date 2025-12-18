@@ -1,5 +1,6 @@
 import { Box, Button, Typography, Divider } from "@mui/joy";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 interface NavButtonProps {
   path: string;
@@ -8,22 +9,34 @@ interface NavButtonProps {
 }
 
 const NavButton = ({ path, name, locked }: NavButtonProps) => {
+  function button(isActive: boolean) {
+    return (
+      <Button variant='plain' disabled={locked} sx={{ marginX: "8px" }}>
+        <Typography
+          level='title-md'
+          fontWeight='400'
+          textColor={
+            locked
+              ? "neutral.softDisabledColor"
+              : isActive
+              ? "primary.500"
+              : "neutral.500"
+          }
+        >
+          {name}
+        </Typography>
+      </Button>
+    );
+  }
+
   return (
-    <Button
-      component='a'
-      href={path}
-      variant='plain'
-      disabled={locked}
-      sx={{ marginX: "8px" }}
-    >
-      <Typography
-        level='title-md'
-        fontWeight='400'
-        textColor={locked ? "neutral.softDisabledColor" : "neutral"}
-      >
-        {name}
-      </Typography>
-    </Button>
+    <>
+      {locked ? (
+        button(false)
+      ) : (
+        <NavLink to={path}>{({ isActive }) => button(isActive)}</NavLink>
+      )}
+    </>
   );
 };
 
@@ -36,7 +49,7 @@ const NavBar = () => {
   ];
 
   return (
-    <Box width={0.8} my={1} display='flex' justifyContent='right'>
+    <Box width={0.8} mt={1} display='flex' justifyContent='right'>
       <>
         {navButtons.map((button, index) => {
           return (

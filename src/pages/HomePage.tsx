@@ -3,6 +3,7 @@ import PageBase from "../components/PageBase";
 
 import picOfMe from "../assets/pictures/pic-of-me.png";
 import ContentBlock from "../components/ContentBlock";
+import { Link as RouterLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -13,9 +14,12 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            flexWrap: "wrap",
           }}
         >
-          <Box sx={{ width: 0.65 }}>
+          <Box
+            sx={{ maxWidth: 0.65, minWidth: 400, justifySelf: "flex-start" }}
+          >
             <Box mb={1}>
               <Typography
                 color='primary'
@@ -59,24 +63,30 @@ const HomePage = () => {
             sx={{
               display: "flex",
               flexDirection: "column",
-              width: 0.2,
+              maxWidth: 0.25,
+              minWidth: 200,
               alignItems: "flex-end",
+              justifySelf: "flex-end",
             }}
           >
-            <Box width={250} height={250}>
-              <AspectRatio objectFit='fill' minHeight={250}>
-                <img src={picOfMe} />
-              </AspectRatio>
-            </Box>
+            <Box width={1} component='img' src={picOfMe} />
 
             <Typography level='body-md' mt={1} gutterBottom>
-              Me and my cat, <Link href='/scully'>Scully</Link>.
+              Me and my cat,{" "}
+              <RouterLink to='/scully'>
+                <Link>Scully</Link>
+              </RouterLink>
+              .
             </Typography>
           </Box>
         </Box>
         <Typography level='body-md' gutterBottom>
-          In fall 2025 I am organizing the UW graduate student topology seminar,{" "}
-          <Link href='/dubtop-fall-2025'>DubTop</Link>.
+          In fall 2025, I am organizing the UW graduate student topology
+          seminar,{" "}
+          <RouterLink to='/dubtop-fall-2025'>
+            <Link>DubTop</Link>
+          </RouterLink>
+          .
         </Typography>
       </ContentBlock>
     </PageBase>

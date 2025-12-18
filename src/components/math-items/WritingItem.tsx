@@ -10,7 +10,7 @@ interface WritingItemProps {
 
 const WritingItem = ({ title, path, date, children }: WritingItemProps) => {
   return (
-    <Box my={1}>
+    <Box my={3}>
       <Typography level='title-md' fontStyle='italic'>
         <Typography fontWeight='600'>
           <Link href={path} underline='always'>

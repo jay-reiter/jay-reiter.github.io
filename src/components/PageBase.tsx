@@ -44,7 +44,7 @@ const PageBase: React.FC<PageBaseProps> = ({ children }) => {
           alignItems='center'
         >
           <NavBar />
-          <Box width={0.9} my={4} alignItems='center'>
+          <Box width={0.9} alignItems='center'>
             {children}
           </Box>
         </Box>
