@@ -1,8 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import MathPage from "../pages/MathPage";
-import TeachingPage from "../pages/TeachingPage";
-import Page from "./Page";
+import {
+  HomePage,
+  MathPage,
+  TeachingPage,
+  DubTopFall2025,
+  ScullyPage,
+} from "../pages";
+import { Page } from "../components";
 
 const Router = () => {
   return (
@@ -20,6 +24,18 @@ const Router = () => {
           path='/teaching'
           element={
             <Page title='Jay Reiter - Teaching' component={<TeachingPage />} />
+          }
+        />
+        <Route
+          path='/dubtop-fall-2025'
+          element={
+            <Page title='DubTop Fall 2025' component={<DubTopFall2025 />} />
+          }
+        />
+        <Route
+          path='/scully'
+          element={
+            <Page title='Jay Reiter - Scully' component={<ScullyPage />} />
           }
         />
       </Routes>

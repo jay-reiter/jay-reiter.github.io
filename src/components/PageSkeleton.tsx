@@ -2,16 +2,19 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import { AspectRatio } from "@mui/joy";
 
-import NavBar from "./NavBar";
+import { NavBar, Footer } from "../components";
 
 import mtrainier from "../assets/pictures/mt-rainier.png";
-import Footer from "./Footer";
 
 type PageBaseProps = {
+  includeBannerImage?: boolean;
   children?: React.ReactNode;
 };
 
-const PageSkeleton: React.FC<PageBaseProps> = ({ children }) => {
+const PageSkeleton: React.FC<PageBaseProps> = ({
+  includeBannerImage = true,
+  children,
+}) => {
   return (
     <>
       <Grid
@@ -22,21 +25,23 @@ const PageSkeleton: React.FC<PageBaseProps> = ({ children }) => {
           flexDirection: "column",
         }}
       >
-        <Box width={1} position='relative'>
-          <AspectRatio objectFit='cover' minHeight={300} maxHeight={300}>
-            <img src={mtrainier} />
-          </AspectRatio>
-          <Box
-            sx={{
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              bgcolor: "rgba(255, 255, 255, 0.5)",
-            }}
-          />
-        </Box>
+        {includeBannerImage && (
+          <Box width='span' position='relative'>
+            <AspectRatio objectFit='cover' minHeight={300} maxHeight={300}>
+              <img src={mtrainier} />
+            </AspectRatio>
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                bgcolor: "rgba(255, 255, 255, 0.5)",
+              }}
+            />
+          </Box>
+        )}
 
         <Box width={0.9} alignSelf='center'>
           <Box

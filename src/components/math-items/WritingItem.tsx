@@ -11,8 +11,8 @@ interface WritingItemProps {
 const WritingItem = ({ title, path, date, children }: WritingItemProps) => {
   return (
     <Box my={3}>
-      <Typography level='title-md' fontStyle='italic'>
-        <Typography fontWeight='700'>
+      <Typography level='title-sm' fontStyle='italic'>
+        <Typography fontWeight='800'>
           <Link href={path} underline='always' target='_blank' rel='noreferrer'>
             {title}
           </Link>

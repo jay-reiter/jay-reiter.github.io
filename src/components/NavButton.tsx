@@ -13,7 +13,6 @@ const NavButton = ({ path, name, locked }: NavButtonProps) => {
       <Button variant='plain' disabled={locked} sx={{ marginX: "8px" }}>
         <Typography
           level='title-md'
-          fontWeight='400'
           textColor={
             locked
               ? "neutral.softDisabledColor"
@@ -21,6 +20,7 @@ const NavButton = ({ path, name, locked }: NavButtonProps) => {
               ? "primary.500"
               : "neutral.500"
           }
+          fontWeight={isActive ? "600" : "400"}
         >
           {name}
         </Typography>

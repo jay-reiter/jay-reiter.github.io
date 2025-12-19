@@ -10,7 +10,7 @@ interface TalkItemProps {
 
 const TalkItem = ({ title, date, seminar, link }: TalkItemProps) => {
   return (
-    <Typography level='body-md' fontWeight='400' display='inline'>
+    <Typography level='body-sm' textColor='black' display='inline'>
       "{title}" --{" "}
       <Link
         href={link}

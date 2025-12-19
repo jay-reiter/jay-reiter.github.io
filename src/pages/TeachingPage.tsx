@@ -1,6 +1,5 @@
 import { List, ListItem, Typography } from "@mui/joy";
-import ContentBlock from "../components/ContentBlock";
-import PageSkeleton from "../components/PageSkeleton";
+import { ContentBlock, PageSkeleton } from "../components";
 
 const TeachinPage = () => {
   const teachingPositions = [
@@ -37,11 +36,11 @@ const TeachinPage = () => {
         <Typography level='h3' color='primary' fontWeight='500' gutterBottom>
           TA Positions at UW
         </Typography>
-        <Typography level='body-md'>
-          <List marker='square'>
+        <Typography level='body-sm' textColor='black'>
+          <List marker='square' size='sm'>
             {teachingPositions.map((position) => (
               <ListItem>
-                <Typography level='title-md' fontWeight='700' display='inline'>
+                <Typography level='title-sm' fontWeight='700' display='inline'>
                   {position.number}: {position.title}
                 </Typography>{" "}
                 -- {position.quarters.join(", ")}

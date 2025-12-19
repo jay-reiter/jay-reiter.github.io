@@ -1,10 +1,12 @@
 import { Box, List, ListItem, Typography } from "@mui/joy";
-import PageSkeleton from "../components/PageSkeleton";
-import ContentBlock from "../components/ContentBlock";
-import WritingItem from "../components/math-items/WritingItem";
 import { MathComponent } from "mathjax-react";
-import TravelItem from "../components/math-items/TravelItem";
-import TalkItem from "../components/math-items/TalkItem";
+import {
+  ContentBlock,
+  PageSkeleton,
+  WritingItem,
+  TravelItem,
+  TalkItem,
+} from "../components";
 
 const MathPage = () => {
   const travelItems = [
@@ -175,7 +177,7 @@ const MathPage = () => {
         <Typography level='h3' gutterBottom color='primary' fontWeight='500'>
           Conferences and Workshops
         </Typography>
-        <List marker='square'>
+        <List marker='square' size='sm'>
           {travelItems.map((item) => {
             return <ListItem>{item}</ListItem>;
           })}
@@ -188,7 +190,7 @@ const MathPage = () => {
         <Typography level='h4' gutterBottom color='primary' fontWeight='300'>
           External Talks
         </Typography>
-        <List marker='square'>
+        <List marker='square' size='sm'>
           {externalTalks.map((item) => {
             return <ListItem>{item}</ListItem>;
           })}
