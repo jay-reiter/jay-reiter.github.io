@@ -1,7 +1,7 @@
 {
   "name": "math-website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://jay-reiter.github.io/",
   "dependencies": {
     "@emotion/react": "^11.14.0",
