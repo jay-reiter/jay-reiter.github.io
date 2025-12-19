@@ -85,7 +85,7 @@ const DubTopFall2025 = () => {
     />,
     <DubTopTalkItem
       speaker='Manyi Guo'
-      title='Suynthetic Toda brackets'
+      title='Synthetic Toda brackets'
       abstract='In this talk I will explain how and why Toda brackets admit controllable bounds on their Adams filtration when considered in the synthetic setting. This control may seem subtle: one must keep track not only of the Adams filtrations of the maps, but also of the Adams filtrations of the requisite homotopies. The category of synthetic spectra provides exactly the right tool to organize this tracking. The synthetic version of Toda brackets also gives a refined understanding of “crossing differentials” as well as capturing the Adams filtration of the corresponding classical Toda brackets in the ordinary stable category. If time permits, I will also discuss examples from the work of Burklund--Hahn--Senger and of Lin--Wang--Xu.'
       date='November 14'
     />,
