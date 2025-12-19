@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 interface PageProps {
   title?: string;
-  component: React.ReactNode;
+  component: React.ReactElement;
 }
 
 const Page = ({ title, component }: PageProps) => {
@@ -10,7 +10,7 @@ const Page = ({ title, component }: PageProps) => {
     document.title = title || "";
   }, [title]);
 
-  return <>{component}</>;
+  return component;
 };
 
 export default Page;

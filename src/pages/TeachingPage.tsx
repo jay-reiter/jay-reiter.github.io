@@ -1,7 +1,8 @@
 import { List, ListItem, Typography } from "@mui/joy";
-import { ContentBlock, PageSkeleton } from "../components";
+import PageSkeleton from "../components/PageSkeleton";
+import ContentBlock from "../components/ContentBlock";
 
-const TeachinPage = () => {
+const TeachingPage = () => {
   const teachingPositions = [
     {
       number: "Math 124",
@@ -53,4 +54,4 @@ const TeachinPage = () => {
   );
 };
 
-export default TeachinPage;
+export default TeachingPage;

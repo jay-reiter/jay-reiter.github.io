@@ -1,5 +1,6 @@
 import { Box, Typography, Link } from "@mui/joy";
-import { PageSkeleton, ContentBlock } from "../components";
+import PageSkeleton from "../components/PageSkeleton";
+import ContentBlock from "../components/ContentBlock";
 
 import picOfMe from "../assets/pictures/pic-of-me.png";
 

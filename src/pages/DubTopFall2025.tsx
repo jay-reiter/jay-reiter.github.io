@@ -1,5 +1,7 @@
-import { Box, Link, List, Typography } from "@mui/joy";
-import { ContentBlock, PageSkeleton, DubTopTalkItem } from "../components";
+import { Box, Link, Typography } from "@mui/joy";
+import PageSkeleton from "../components/PageSkeleton";
+import ContentBlock from "../components/ContentBlock";
+import DubTopTalkItem from "../components/DubTopTalkItem";
 import { MathComponent } from "mathjax-react";
 
 const DubTopFall2025 = () => {

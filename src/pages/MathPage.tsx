@@ -1,12 +1,10 @@
-import { Box, List, ListItem, Typography } from "@mui/joy";
+import { List, ListItem, Typography } from "@mui/joy";
 import { MathComponent } from "mathjax-react";
-import {
-  ContentBlock,
-  PageSkeleton,
-  WritingItem,
-  TravelItem,
-  TalkItem,
-} from "../components";
+import PageSkeleton from "../components/PageSkeleton";
+import ContentBlock from "../components/ContentBlock";
+import TravelItem from "../components/math-items/TravelItem";
+import TalkItem from "../components/math-items/TalkItem";
+import WritingItem from "../components/math-items/WritingItem";
 
 const MathPage = () => {
   const travelItems = [

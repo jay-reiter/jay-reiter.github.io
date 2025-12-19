@@ -2,19 +2,20 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import { AspectRatio } from "@mui/joy";
 
-import { NavBar, Footer } from "../components";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 import mtrainier from "../assets/pictures/mt-rainier.png";
 
-type PageBaseProps = {
+type PageSkeletonProps = {
   includeBannerImage?: boolean;
   children?: React.ReactNode;
 };
 
-const PageSkeleton: React.FC<PageBaseProps> = ({
+const PageSkeleton = ({
   includeBannerImage = true,
   children,
-}) => {
+}: PageSkeletonProps) => {
   return (
     <>
       <Grid
@@ -28,7 +29,7 @@ const PageSkeleton: React.FC<PageBaseProps> = ({
         {includeBannerImage && (
           <Box width='span' position='relative'>
             <AspectRatio objectFit='cover' minHeight={300} maxHeight={300}>
-              <img src={mtrainier} />
+              <img src={mtrainier} alt='Mount Rainier' />
             </AspectRatio>
             <Box
               sx={{

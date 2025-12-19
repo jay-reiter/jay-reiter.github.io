@@ -1,14 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {
-  HomePage,
-  MathPage,
-  TeachingPage,
-  DubTopFall2025,
-  ScullyPage,
-} from "../pages";
-import { Page } from "../components";
+import DubTopFall2025 from "../pages/DubTopFall2025";
+import HomePage from "../pages/HomePage";
+import MathPage from "../pages/MathPage";
+import ScullyPage from "../pages/ScullyPage";
+import TeachingPage from "../pages/TeachingPage";
+import Page from "./Page";
 
-const Router = () => {
+const CustomRouter = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
@@ -42,4 +40,5 @@ const Router = () => {
     </BrowserRouter>
   );
 };
-export default Router;
+
+export default CustomRouter;

@@ -1,5 +1,5 @@
 import { Box, Divider } from "@mui/joy";
-import { NavButton } from "../components";
+import NavButton from "./NavButton";
 
 const NavBar = () => {
   const navButtons = [

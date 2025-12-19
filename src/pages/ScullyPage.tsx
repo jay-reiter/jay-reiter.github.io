@@ -1,5 +1,6 @@
 import { Box, Divider, Typography } from "@mui/joy";
-import { PageSkeleton } from "../components";
+import PageSkeleton from "../components/PageSkeleton";
+import ImageCard from "../components/ImageCard";
 
 import {
   asleep,
@@ -31,7 +32,6 @@ import {
   upside_down,
   you_ve_got_mail,
 } from "../assets/pictures/scully";
-import ImageCard from "../components/ImageCard";
 
 const ScullyPage = () => {
   const images = [
@@ -89,8 +89,8 @@ const ScullyPage = () => {
         gap={2}
         my={4}
       >
-        {images.map((image) => (
-          <ImageCard image={image.image} caption={image.caption} />
+        {images.map((img) => (
+          <ImageCard image={img.image} caption={img.caption} />
         ))}
       </Box>
     </PageSkeleton>
