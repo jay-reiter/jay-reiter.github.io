@@ -9,7 +9,7 @@ const talks: ReactElement[] = [
     title={<>TBA</>}
     abstract={<>TBA</>}
     date='January 16'
-    speakerWebsite='https://sites.google.com/view/jacksonmorris/home'
+    speakerWebsite='https://jackson-morris.github.io/'
   />,
   <DubTopTalkItem
     speaker='Daniel Rostamloo'

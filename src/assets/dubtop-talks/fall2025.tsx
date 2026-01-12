@@ -129,7 +129,7 @@ const talks: ReactElement[] = [
       </>
     }
     date='November 21'
-    speakerWebsite='https://sites.google.com/view/jacksonmorris/home'
+    speakerWebsite='https://jackson-morris.github.io/'
   />,
   <DubTopTalkItem
     speaker='Nelson Niu'
