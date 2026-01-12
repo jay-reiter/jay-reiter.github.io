@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import { AspectRatio } from "@mui/joy";
 
-import NavBar from "./NavBar";
+import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
 
 import mtrainier from "../assets/pictures/mt-rainier.png";

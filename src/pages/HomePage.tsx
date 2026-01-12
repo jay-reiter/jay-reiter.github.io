@@ -43,7 +43,7 @@ const HomePage = () => {
               </Typography>
             </Box>
             <Typography level='body-sm' textColor='black'>
-              I am a math Ph.D. student at the{" "}
+              I am a third-year math Ph.D. student at the{" "}
               <Link href='https://math.washington.edu/' underline='hover'>
                 University of Washington
               </Link>
@@ -82,9 +82,8 @@ const HomePage = () => {
           </Box>
         </Box>
         <Typography level='body-sm' textColor='black' gutterBottom>
-          In fall 2025, I am organizing the UW graduate student topology
-          seminar,{" "}
-          <RouterLink to='/dubtop-fall-2025'>
+          I organize the UW graduate student homotopy theory seminar,{" "}
+          <RouterLink to='/dubtop-winter-2026'>
             <Link>DubTop</Link>
           </RouterLink>
           .

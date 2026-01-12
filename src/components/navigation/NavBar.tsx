@@ -1,12 +1,14 @@
 import { Box, Divider } from "@mui/joy";
 import NavButton from "./NavButton";
+import DubTopMenu from "./DubTopMenu";
 
 const NavBar = () => {
   const navButtons = [
     <NavButton path='/' name='Home' />,
     <NavButton path='/math' name='Math' />,
     <NavButton path='/teaching' name='Teaching' />,
-    <NavButton path='/dubtop-fall-2025' name='DubTop Fall 2025' />,
+    // <NavButton path='/dubtop-fall-2025' name='DubTop Fall 2025' />,
+    <DubTopMenu />,
   ];
 
   return (
