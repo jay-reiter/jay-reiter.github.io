@@ -24,9 +24,9 @@ const talks: ReactElement[] = [
   />,
   <DubTopTalkItem
     speaker='Daniel Rostamloo'
-    title='TBA'
+    title='Geometrization'
     date='January 23'
-    abstract={<>TBA</>}
+    abstract={<>Motivated by the work of Simpson in the 90s, many recent advances in modern arithmetic geometry have been made by reinterpreting the cohomology of an object as the sheaf cohomology on a certain stack associated to the object. I will explain this process and how it geometrizes the additional data of filtrations on certain cohomology theories, making the derived category of the stack a natural candidate for a category of motives over the object.</>}
     speakerWebsite='https://theprismatic.site'
   />,
   <DubTopTalkItem
