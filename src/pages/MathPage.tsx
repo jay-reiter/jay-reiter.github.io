@@ -55,6 +55,22 @@ const MathPage = () => {
   ];
   const internalTalks = [
     <TalkItem
+      title={<>
+          
+          <MathComponent tex={String.raw`\mathsf{Pr}^\mathrm{L}`} display={false} />
+          {" "}and stabilization
+        </>}
+      seminar={"Senimar in Derived Algebraic Geometry"}
+      date={"Winter 2026"}
+      link={"https://sites.google.com/view/tinggong/teaching/seminar-in-derived-algebraic-geometry?authuser=0"}
+    />,
+    <TalkItem
+      title={"Homotopy colimits"}
+      seminar={"Student Algebraic Geometry Seminar"}
+      date={"Winter 2026"}
+      link={"https://theprismatic.site/seminars/uwag/"}
+    />,
+    <TalkItem
       title={
         <>
           Deformations of stable{" "}
@@ -64,7 +80,7 @@ const MathPage = () => {
       }
       seminar='DubTop'
       date='Fall 2025'
-      link=''
+      link='https://jay-reiter.github.io/dubtop-fall-2025'
     />,
     <TalkItem
       title='Chromatic homotopy theory and the moduli of formal groups'
