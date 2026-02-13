@@ -16,6 +16,7 @@ const HomePage = () => {
             flexDirection: "row",
             justifyContent: "space-between",
             flexWrap: "wrap",
+            flexGrow: "1"
           }}
         >
           <Box
@@ -48,7 +49,8 @@ const HomePage = () => {
                 University of Washington
               </Link>
               . My mathematical interests are in chromatic homotopy theory,
-              synthetic spectra, and spectral algebraic geometry.
+              higher category theory, and connections with number theory and arithmetic geometry. Lately, this has involved thinking about topological cyclic homology and prismatic cohomology.
+
               <Box height={15} />I received my B.S. in math and computer science
               from the University of Illinois Urbana Champaign in 2023.{" "}
               <Box height={15} />

@@ -31,10 +31,17 @@ const talks: ReactElement[] = [
   />,
   <DubTopTalkItem
     speaker='Albert Jinghui Yang'
-    title='TBA'
+    title='The Bousfield--Kan spectral sequence'
     date='January 30'
-    abstract={<>TBA</>}
+    abstract={<>In this talk, I will discuss the construction of a spectral sequence known as the Bousfield–-Kan spectral sequence (BKSS). As an example, I will briefly introduce an important tool (my favorite one!) called the descent spectral sequence, which is a variant of the BKSS used in computations of <MathComponent tex={String.raw`\mathrm{THH}`} display={false} /> (topological Hochschild homology) of local fields. Using this technique, I will outline the idea behind the computation of <MathComponent tex={String.raw`\mathrm{THH}`} display={false} /> of local fields without carrying out the full calculation. No background in <MathComponent tex={String.raw`\mathrm{THH}`} display={false} /> will be assumed.</>}
     speakerWebsite='https://kclo3-naoh.github.io/'
+  />,
+  <DubTopTalkItem
+    speaker='Ting Gong'
+    title='TBA'
+    date='February 27'
+    abstract={<>TBA</>}
+    speakerWebsite='https://sites.google.com/view/tinggong'
   />,
   <DubTopTalkItem
     speaker='Manyi Guo'
@@ -43,6 +50,13 @@ const talks: ReactElement[] = [
     abstract={<>TBA</>}
     speakerWebsite='https://math.washington.edu/people/manyi-guo'
   />,
+  <DubTopTalkItem
+    speaker='Jay Reiter'
+    title='TBA'
+    date='March 13'
+    abstract={<>TBA</>}
+    speakerWebsite='https://jay-reiter.github.io'
+  />
 ];
 
 export default talks;

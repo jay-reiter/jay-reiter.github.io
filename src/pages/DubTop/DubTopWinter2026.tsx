@@ -20,10 +20,10 @@ const DubTopWinter2026 = () => {
         <Typography level='body-sm' textColor='black' my={2}>
           DubTop is the graduate student topology and homotopy theory seminar at
           UW. We take turns giving talks on topics of our choosing within a
-          selected theme for the quarter. This quarter, the theme is{" "}
+          selected theme for the quarter. This quarter, the theme is ✨{" "}
           <Typography fontWeight='800' display='inline'>
             Filtration Station
-          </Typography>
+          </Typography> ✨
           . To broaden appeal, we welcome occasional talks on other unrelated
           topics if there are speakers interested in giving them!
         </Typography>
