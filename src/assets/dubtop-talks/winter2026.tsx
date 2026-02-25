@@ -38,9 +38,9 @@ const talks: ReactElement[] = [
   />,
   <DubTopTalkItem
     speaker='Ting Gong'
-    title='TBA'
+    title='Bott periodicity from algebraic geometry'
     date='February 27'
-    abstract={<>TBA</>}
+    abstract={<>We will explain the paper by Larson and Vakil on Bott periodicity from approximation by using algebraic geometric objects. In particular, we are going to discuss its relation to motivic homotopy theory and how the techniques of Larson and Vakil are supported in the algebraic topology setting. </>}
     speakerWebsite='https://sites.google.com/view/tinggong'
   />,
   <DubTopTalkItem
