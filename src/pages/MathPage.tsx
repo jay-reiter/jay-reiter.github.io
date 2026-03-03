@@ -153,6 +153,13 @@ const MathPage = () => {
         <Typography level='h3' color='primary' fontWeight='500'>
           Expository Writing
         </Typography>
+        <WritingItem title={<Typography>
+          Notes on straightening-unstraightening and <MathComponent tex={String.raw`\mathsf{Cat}_\infty`} display={false} />
+          </Typography>} 
+          path='../../pdfs/straightening-unstraightening.pdf'
+          date='December 2025'>
+          Some notes I made while trying to understand straightening-unstraightening over winter break of 2025. Not sure how useful this all is, but I certainly learned a lot about model structures and the foundations of <MathComponent tex={String.raw`\infty`} display={false} />-category theory.  More importantly, I got some things straight (haha) about computing (homotopy) colimits..
+        </WritingItem>
         <WritingItem
           title={
             <Typography>
