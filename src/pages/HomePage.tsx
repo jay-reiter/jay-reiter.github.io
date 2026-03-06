@@ -47,9 +47,9 @@ const HomePage = () => {
               I am a third-year math Ph.D. student at the{" "}
               <Link href='https://math.washington.edu/' underline='hover'>
                 University of Washington
-              </Link>
-              . My mathematical interests are in chromatic homotopy theory,
-              higher category theory, and connections with number theory and arithmetic geometry. Lately, this has involved thinking about topological cyclic homology and prismatic cohomology.
+              </Link>,{' '}
+              advised by <Link href='https://www.kurims.kyoto-u.ac.jp/~piotr/' underline='hover'>Piotr Pstr{'\u0105'}gowski</Link>. My mathematical interests are in chromatic homotopy theory,
+              higher category theory, algebraic K-theory, and their connections with number theory and arithmetic geometry.
 
               <Box height={15} />I received my B.S. in math and computer science
               from the University of Illinois Urbana Champaign in 2023.{" "}

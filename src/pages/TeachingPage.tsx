@@ -7,7 +7,7 @@ const TeachingPage = () => {
     {
       number: "Math 124",
       title: "Calculus I",
-      quarters: ["Fall 2023", "Winter 2024", "Fall 2025"],
+      quarters: ["Fall 2023", "Winter 2024", "Fall 2025", "Spring 2026"],
     },
     {
       number: "Math 126",
