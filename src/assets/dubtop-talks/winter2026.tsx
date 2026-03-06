@@ -45,9 +45,17 @@ const talks: ReactElement[] = [
   />,
   <DubTopTalkItem
     speaker='Manyi Guo'
-    title='TBA'
+    title='Décalage'
     date='March 6'
-    abstract={<>TBA</>}
+    abstract={<>First introduced for chain complexes, Décalage “turns the page” of a spectral sequence and has since been generalized to cosimplicial
+objects and filtered spectra. We start with a cosimplicial spectrum{" "}
+<MathComponent tex={String.raw`X^\bullet`} display={false} /> and filters its totalization via levelwise connective
+covers (equivalently, by totalizing the Whitehead tower), obtaining a
+filtered spectrum whose <MathComponent tex={String.raw`\mathrm{Tot}`} display={false} /> spectral sequence is shifted forward:{" "}
+<MathComponent tex={String.raw`E_r(\mathrm{D\acute ec}^\Delta X)\cong E_{r+1}(X^\bullet)`} display={false} />. I will outline
+this construction, explain the page-shifting, and (if time permits)
+discuss applications to comparisons of spectral sequences including
+Adams–-Novikov and slice filtrations.</>}
     speakerWebsite='https://math.washington.edu/people/manyi-guo'
   />,
   <DubTopTalkItem
