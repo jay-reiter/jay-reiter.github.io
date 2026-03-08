@@ -9,6 +9,11 @@ import WritingItem from "../components/math-items/WritingItem";
 const MathPage = () => {
   const travelItems = [
     <TravelItem
+      title='Workshop on Higher Categories and Geometry'
+      date='March 2026'
+      location='NITMB (Northwestern), Chicago, IL'
+    />,
+    <TravelItem
       title='European Autumn School in Topology'
       date='September 2025'
       location='Utrecht, Netherlands'
@@ -158,7 +163,7 @@ const MathPage = () => {
           </Typography>} 
           path='../../pdfs/straightening-unstraightening.pdf'
           date='December 2025'>
-          Some notes I made while trying to understand straightening-unstraightening over winter break of 2025. Not sure how useful this all is, but I certainly learned a lot about model structures and the foundations of <MathComponent tex={String.raw`\infty`} display={false} />-category theory.  More importantly, I got some things straight (haha) about computing (homotopy) colimits..
+          Some notes I made while trying to understand straightening-unstraightening over winter break of 2025. Not sure how useful this all is, but I certainly learned a lot about model structures and the foundations of <MathComponent tex={String.raw`\infty`} display={false} />-category theory.  More importantly, I got some things straight (haha) about computing (homotopy) colimits.
         </WritingItem>
         <WritingItem
           title={
