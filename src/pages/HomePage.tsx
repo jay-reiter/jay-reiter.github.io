@@ -45,16 +45,16 @@ const HomePage = () => {
             </Box>
             <Typography level='body-sm' textColor='black'>
               I am a third-year math Ph.D. student at the{" "}
-              <Link href='https://math.washington.edu/' underline='hover'>
+              <Link target='_blank' href='https://math.washington.edu/' underline='hover'>
                 University of Washington
               </Link>,{' '}
-              advised by <Link href='https://www.kurims.kyoto-u.ac.jp/~piotr/' underline='hover'>Piotr Pstr{'\u0105'}gowski</Link>. My mathematical interests are in chromatic homotopy theory,
+              advised by <Link target='_blank' href='https://www.kurims.kyoto-u.ac.jp/~piotr/' underline='hover'>Piotr Pstr{'\u0105'}gowski</Link>. My mathematical interests are in chromatic homotopy theory,
               higher category theory, algebraic K-theory, and their connections with number theory and arithmetic geometry.
 
               <Box height={15} />I received my B.S. in math and computer science
-              from the University of Illinois Urbana Champaign in 2023.{" "}
+              from the <Link target='_blank' href='https://math.illinois.edu/' underline="hover">University of Illinois Urbana Champaign</Link> in 2023.{" "}
               <Box height={15} />
-              My email is{" "}
+              Here is my <Link target='_blank' href='/pdfs/cv.pdf'>CV</Link> (updated March 2026). My email is{" "}
               <Link href='mailto:jrreiter@uw.edu'>jrreiter@uw.edu</Link>, and my
               office is PDL C-543.
             </Typography>
