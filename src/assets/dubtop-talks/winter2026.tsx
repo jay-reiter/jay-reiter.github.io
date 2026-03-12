@@ -60,9 +60,9 @@ Adams–-Novikov and slice filtrations.</>}
   />,
   <DubTopTalkItem
     speaker='Jay Reiter'
-    title='TBA'
+    title={<>Galois descent in algebraic <MathComponent tex={String.raw`\mathrm{K}`} display={false} />-theory</>}
     date='March 13'
-    abstract={<>TBA</>}
+    abstract={<>The Lichtenbaum--Quillen conjecture concerns the convergence of a motivic spectral sequence that begins with the étale cohomology of a variety and abuts to its algebraic <MathComponent tex={String.raw`\mathrm{K}`} display={false} />-theory. In the 80's, Thomason showed that after rationalization, algebraic <MathComponent tex={String.raw`\mathrm{K}`} display={false} />-theory is a sheaf for the étale topology, and so rationally, the motivic spectral sequence is nothing more than an étale descent spectral sequence. For a while, it was known that the obstruction to <MathComponent tex={String.raw`\mathrm{K}`} display={false} /> being an étale sheaf is its failure to satisfy Galois descent. Using a general theory of descendability and "deformations of descendable objects," Clausen--Mathew--Naumann--Noel extend Thomason's result to show that <MathComponent tex={String.raw`\mathrm{K}`} display={false} /> satisfies Galois descent after localization at the mapping telescope <MathComponent tex={String.raw`\mathrm{T}(n)`} display={false} /> of a type-<MathComponent tex={String.raw`n`} display={false} /> spectrum for any <MathComponent tex={String.raw`n`} display={false} />. In this talk, we'll give an overview of their techniques, and (time permitting) outline how Yuan uses this result to give a formal proof of chromatic redshift for Morava <MathComponent tex={String.raw`\mathrm{E}`} display={false} />-theory</>}
     speakerWebsite='https://jay-reiter.github.io'
   />
 ];

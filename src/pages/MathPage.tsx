@@ -60,6 +60,12 @@ const MathPage = () => {
   ];
   const internalTalks = [
     <TalkItem
+    title={<>Galois descent in algebraic <MathComponent tex={String.raw`\mathrm{K}`} display={false} />-theory</>}
+    seminar="DubTop"
+    date="Winter 2026"
+    link="https://jay-reiter.github.io/dubtop-winter-2026"
+    />,
+    <TalkItem
       title={<>
           
           <MathComponent tex={String.raw`\mathsf{Pr}^\mathrm{L}`} display={false} />
