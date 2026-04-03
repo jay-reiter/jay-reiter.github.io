@@ -4,6 +4,7 @@ import ContentBlock from "../../components/ContentBlock";
 
 import talks from "../../assets/dubtop-talks/spring2026";
 import { ReactElement } from "react";
+import { MathComponent } from "mathjax-react";
 
 const DubTopSpring2026 = () => {
   return (
@@ -25,19 +26,19 @@ const DubTopSpring2026 = () => {
           ever---it was tough to settle on just one topic. As a result, the
           theme(s) for DubTop this quarter is (are){" "}
           <Typography fontWeight="800" display="inline">
-            chromatic redshift and algebraic{" "}
+            <Typography textColor="red">redshift</Typography> and algebraic{" "}
             <MathComponent tex={String.raw`K`} display={false} />
             -theory
-          </Typography>{" "}
-          ,
+          </Typography>
+          , as well as{" "}
           <Typography fontWeight="800" display="inline">
             <MathComponent tex={String.raw`T(n)`} display={false} />
             -local homotopy theory
-          </Typography>{" "}
-          , and with an honorable mention topic of
+          </Typography>
+          , and with an "honorable mention" topic of{" "}
           <Typography fontWeight="800" display="inline">
             motivic cohomology
-          </Typography>{" "}
+          </Typography>
           .
         </Typography>
         <Typography level="body-sm" textColor="black" gutterBottom>
@@ -45,7 +46,7 @@ const DubTopSpring2026 = () => {
           <Typography fontWeight="800" display="inline">
             Fridays 1:30 - 2:30 in PDL C-401
           </Typography>
-          !
+          .
         </Typography>
 
         <Typography color="primary" level="h3" fontWeight="500" mt={6} mb={3}>
