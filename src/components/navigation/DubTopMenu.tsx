@@ -17,9 +17,9 @@ const DubTopMenu = () => {
 
   return (
     <Dropdown>
-      <MenuButton variant='plain' color='primary' sx={{ marginX: "8px" }}>
+      <MenuButton variant="plain" color="primary" sx={{ marginX: "8px" }}>
         <Typography
-          level='title-md'
+          level="title-md"
           textColor={isActive ? "primary.500" : "neutral.500"}
           fontWeight={isActive ? "600" : "400"}
         >
@@ -27,30 +27,37 @@ const DubTopMenu = () => {
         </Typography>
       </MenuButton>
 
-      <Menu placement='bottom-end'>
-        <MenuItem color='neutral'>
+      <Menu placement="bottom-end">
+        <MenuItem color="neutral">
           <ListItemDecorator>
-            <Star color='primary' />
+            <Star color="primary" />
           </ListItemDecorator>{" "}
           <NavLink
-            to={"/dubtop-winter-2026"}
+            to={"/dubtop-spring-2026"}
             style={{ textDecoration: "none" }}
           >
-            <Typography>Winter 2026</Typography>
+            <Typography>Spring 2026</Typography>
           </NavLink>
         </MenuItem>
 
         <ListDivider />
 
-        {/* <MenuItem disabled color='neutral'>
-          <ListItemDecorator />
-          <Typography textColor='neutral.500'>Past Quarters:</Typography>
-        </MenuItem> */}
+        {/* past DubTop quarters below */}
 
-        <MenuItem color='neutral'>
+        <MenuItem color="neutral">
+          <ListItemDecorator />
+          <NavLink
+            to={"/dubtop-winter-2026"}
+            style={{ textDecoration: "none" }}
+          >
+            <Typography textColor="neutral.500">Winter 2025</Typography>
+          </NavLink>
+        </MenuItem>
+
+        <MenuItem color="neutral">
           <ListItemDecorator />
           <NavLink to={"/dubtop-fall-2025"} style={{ textDecoration: "none" }}>
-            <Typography textColor='neutral.500'>Fall 2025</Typography>
+            <Typography textColor="neutral.500">Fall 2025</Typography>
           </NavLink>
         </MenuItem>
       </Menu>

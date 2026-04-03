@@ -1,4 +1,4 @@
-import { Box, Link, Typography } from "@mui/joy";
+import { Box, Typography } from "@mui/joy";
 import PageSkeleton from "../../components/PageSkeleton";
 import ContentBlock from "../../components/ContentBlock";
 

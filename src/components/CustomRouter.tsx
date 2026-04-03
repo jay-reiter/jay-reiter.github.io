@@ -6,41 +6,48 @@ import ScullyPage from "../pages/ScullyPage";
 import TeachingPage from "../pages/TeachingPage";
 import Page from "./Page";
 import DubTopWinter2026 from "../pages/DubTop/DubTopWinter2026";
+import DubTopSpring2026 from "../pages/DubTop/DubTopSpring2026";
 
 const CustomRouter = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route
-          path='/'
-          element={<Page title='Jay Reiter' component={<HomePage />} />}
+          path="/"
+          element={<Page title="Jay Reiter" component={<HomePage />} />}
         />
         <Route
-          path='/math'
-          element={<Page title='Jay Reiter - Math' component={<MathPage />} />}
+          path="/math"
+          element={<Page title="Jay Reiter - Math" component={<MathPage />} />}
         />
         <Route
-          path='/teaching'
+          path="/teaching"
           element={
-            <Page title='Jay Reiter - Teaching' component={<TeachingPage />} />
+            <Page title="Jay Reiter - Teaching" component={<TeachingPage />} />
           }
         />
         <Route
-          path='/dubtop-fall-2025'
+          path="/dubtop-fall-2025"
           element={
-            <Page title='DubTop Fall 2025' component={<DubTopFall2025 />} />
+            <Page title="DubTop Fall 2025" component={<DubTopFall2025 />} />
           }
         />
         <Route
-          path='/dubtop-winter-2026'
+          path="/dubtop-winter-2026"
           element={
-            <Page title='DubTop Winter 2026' component={<DubTopWinter2026 />} />
+            <Page title="DubTop Winter 2026" component={<DubTopWinter2026 />} />
           }
         />
         <Route
-          path='/scully'
+          path="/dubtop-spring-2026"
           element={
-            <Page title='Jay Reiter - Scully' component={<ScullyPage />} />
+            <Page title="DubTop Spring 2026" component={<DubTopSpring2026 />} />
+          }
+        />
+        <Route
+          path="/scully"
+          element={
+            <Page title="Jay Reiter - Scully" component={<ScullyPage />} />
           }
         />
       </Routes>
