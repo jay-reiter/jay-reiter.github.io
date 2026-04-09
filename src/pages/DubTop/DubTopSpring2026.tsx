@@ -26,9 +26,14 @@ const DubTopSpring2026 = () => {
           ever---it was tough to settle on just one topic. As a result, the
           theme(s) for DubTop this quarter is (are){" "}
           <Typography fontWeight="800" display="inline">
-            <Typography textColor="red">redshift</Typography> and algebraic{" "}
-            <MathComponent tex={String.raw`K`} display={false} />
-            -theory
+            chromatic <Typography textColor="#550000">r</Typography>
+            <Typography textColor="#770000">e</Typography>
+            <Typography textColor="#990000">d</Typography>
+            <Typography textColor="#bb0000">s</Typography>
+            <Typography textColor="#cc0000">h</Typography>
+            <Typography textColor="#dd0000">i</Typography>
+            <Typography textColor="#dd0000">f</Typography>
+            <Typography textColor="#ee0000">t</Typography>
           </Typography>
           , as well as{" "}
           <Typography fontWeight="800" display="inline">
@@ -39,10 +44,11 @@ const DubTopSpring2026 = () => {
           <Typography fontWeight="800" display="inline">
             motivic cohomology
           </Typography>
-          .
+          . Of course, as always, anyone can talk about whatever they want! All
+          that to say, there's not really a theme this quarter. 😼
         </Typography>
         <Typography level="body-sm" textColor="black" gutterBottom>
-          At long last, we are back in Padelford this quarter! We'll be meeting{" "}
+          At long last, we are back in Padelford! We'll be meeting{" "}
           <Typography fontWeight="800" display="inline">
             Fridays 1:30 - 2:30 in PDL C-401
           </Typography>

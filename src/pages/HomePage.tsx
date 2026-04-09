@@ -16,7 +16,7 @@ const HomePage = () => {
             flexDirection: "row",
             justifyContent: "space-between",
             flexWrap: "wrap",
-            flexGrow: "1"
+            flexGrow: "1",
           }}
         >
           <Box
@@ -24,38 +24,61 @@ const HomePage = () => {
           >
             <Box mb={1}>
               <Typography
-                color='primary'
-                level='h1'
-                display='inline'
-                fontWeight='650'
+                color="primary"
+                level="h1"
+                display="inline"
+                fontWeight="650"
                 gutterBottom
               >
                 Jay Reiter
               </Typography>
               <Typography
-                color='primary'
-                level='h3'
-                display='inline'
-                fontWeight='450'
+                color="primary"
+                level="h3"
+                display="inline"
+                fontWeight="450"
                 gutterBottom
                 style={{ marginLeft: 20 }}
               >
                 (he/him)
               </Typography>
             </Box>
-            <Typography level='body-sm' textColor='black'>
+            <Typography level="body-sm" textColor="black">
               I am a third-year math Ph.D. student at the{" "}
-              <Link target='_blank' href='https://math.washington.edu/' underline='hover'>
+              <Link
+                target="_blank"
+                href="https://math.washington.edu/"
+                underline="hover"
+              >
                 University of Washington
-              </Link>,{' '}
-              advised by <Link target='_blank' href='https://www.kurims.kyoto-u.ac.jp/~piotr/' underline='hover'>Piotr Pstr{'\u0105'}gowski</Link>. My mathematical interests are in chromatic homotopy theory,
-              higher category theory, algebraic K-theory, and their connections with number theory and arithmetic geometry.
-
+              </Link>
+              , advised by{" "}
+              <Link
+                target="_blank"
+                href="https://www.kurims.kyoto-u.ac.jp/~piotr/"
+                underline="hover"
+              >
+                Piotr Pstr{"\u0105"}gowski
+              </Link>
+              . My mathematical interests are in chromatic homotopy theory,
+              higher category theory, algebraic K-theory, and their connections
+              with number theory and arithmetic geometry.
               <Box height={15} />I received my B.S. in math and computer science
-              from the <Link target='_blank' href='https://math.illinois.edu/' underline="hover">University of Illinois Urbana Champaign</Link> in 2023.{" "}
-              <Box height={15} />
-              Here is my <Link target='_blank' href='/pdfs/cv.pdf'>CV</Link> (updated March 2026). My email is{" "}
-              <Link href='mailto:jrreiter@uw.edu'>jrreiter@uw.edu</Link>, and my
+              from the{" "}
+              <Link
+                target="_blank"
+                href="https://math.illinois.edu/"
+                underline="hover"
+              >
+                University of Illinois Urbana Champaign
+              </Link>{" "}
+              in 2023. <Box height={15} />
+              Here is my{" "}
+              <Link target="_blank" href="/pdfs/cv.pdf">
+                CV
+              </Link>{" "}
+              (updated March 2026). My email is{" "}
+              <Link href="mailto:jrreiter@uw.edu">jrreiter@uw.edu</Link>, and my
               office is PDL C-543.
             </Typography>
           </Box>
@@ -69,12 +92,12 @@ const HomePage = () => {
               justifySelf: "flex-end",
             }}
           >
-            <Box width={1} component='img' src={picOfMe} />
+            <Box width={1} component="img" src={picOfMe} />
 
-            <Typography level='body-sm' textColor='black' mt={1} gutterBottom>
+            <Typography level="body-sm" textColor="black" mt={1} gutterBottom>
               Me and my cat,{" "}
               <RouterLink
-                to='/scully'
+                to="/scully"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 Scully
@@ -83,9 +106,9 @@ const HomePage = () => {
             </Typography>
           </Box>
         </Box>
-        <Typography level='body-sm' textColor='black' gutterBottom>
+        <Typography level="body-sm" textColor="black" gutterBottom>
           I organize the UW graduate student homotopy theory seminar,{" "}
-          <RouterLink to='/dubtop-winter-2026'>
+          <RouterLink to="/dubtop-spring-2026">
             <Link>DubTop</Link>
           </RouterLink>
           .

@@ -9,40 +9,40 @@ import WritingItem from "../components/math-items/WritingItem";
 const MathPage = () => {
   const travelItems = [
     <TravelItem
-      title='Workshop on Higher Categories and Geometry'
-      date='March 2026'
-      location='NITMB (Northwestern), Chicago, IL'
+      title="Workshop on Higher Categories and Geometry"
+      date="March 2026"
+      location="NITMB (Northwestern), Chicago, IL"
     />,
     <TravelItem
-      title='European Autumn School in Topology'
-      date='September 2025'
-      location='Utrecht, Netherlands'
+      title="European Autumn School in Topology"
+      date="September 2025"
+      location="Utrecht, Netherlands"
     />,
     <TravelItem
-      title='European Talbot'
-      date='July 2025'
-      location='Kolding, Denmark'
+      title="European Talbot"
+      date="July 2025"
+      location="Kolding, Denmark"
     />,
     <TravelItem
-      title='Western Algebraic Geometry Symposium'
-      date='April 2025'
-      location='UBC, Vancouver, Canada'
+      title="Western Algebraic Geometry Symposium"
+      date="April 2025"
+      location="UBC, Vancouver, Canada"
     />,
     <TravelItem
-      title='Joint Math Meetings'
-      date='January 2025'
-      location='Seattle, WA'
+      title="Joint Math Meetings"
+      date="January 2025"
+      location="Seattle, WA"
     />,
     <TravelItem
-      title='Life After the Telescope Conjecture'
-      date='December 2024'
-      location='SL Math, Berkeley, CA'
+      title="Life After the Telescope Conjecture"
+      date="December 2024"
+      location="SL Math, Berkeley, CA"
     />,
-    <TravelItem title='eCHT Kan Seminar' date='Fall 2024' location='Online' />,
+    <TravelItem title="eCHT Kan Seminar" date="Fall 2024" location="Online" />,
     <TravelItem
-      title='Joint Math Meetings'
-      date='January 2023'
-      location='Boston, MA'
+      title="Joint Math Meetings"
+      date="January 2023"
+      location="Boston, MA"
     />,
   ];
   const externalTalks = [
@@ -53,27 +53,39 @@ const MathPage = () => {
           <MathComponent tex={String.raw`J(X)`} display={false} /> -- IV
         </>
       }
-      seminar='eCHT Kan Seminar'
-      date='Fall 2024'
-      link='https://s.wayne.edu/echt/echt-reading-seminars/kan-seminar-fall-2024/'
+      seminar="eCHT Kan Seminar"
+      date="Fall 2024"
+      link="https://s.wayne.edu/echt/echt-reading-seminars/kan-seminar-fall-2024/"
     />,
   ];
   const internalTalks = [
     <TalkItem
-    title={<>Galois descent in algebraic <MathComponent tex={String.raw`\mathrm{K}`} display={false} />-theory</>}
-    seminar="DubTop"
-    date="Winter 2026"
-    link="https://jay-reiter.github.io/dubtop-winter-2026"
+      title={
+        <>
+          Galois descent in algebraic{" "}
+          <MathComponent tex={String.raw`\mathrm{K}`} display={false} />
+          -theory
+        </>
+      }
+      seminar="DubTop"
+      date="Winter 2026"
+      link="https://jay-reiter.github.io/dubtop-winter-2026"
     />,
     <TalkItem
-      title={<>
-          
-          <MathComponent tex={String.raw`\mathsf{Pr}^\mathrm{L}`} display={false} />
-          {" "}and stabilization
-        </>}
+      title={
+        <>
+          <MathComponent
+            tex={String.raw`\mathsf{Pr}^\mathrm{L}`}
+            display={false}
+          />{" "}
+          and stabilization
+        </>
+      }
       seminar={"Senimar in Derived Algebraic Geometry"}
       date={"Winter 2026"}
-      link={"https://sites.google.com/view/tinggong/teaching/seminar-in-derived-algebraic-geometry?authuser=0"}
+      link={
+        "https://sites.google.com/view/tinggong/teaching/seminar-in-derived-algebraic-geometry?authuser=0"
+      }
     />,
     <TalkItem
       title={"Homotopy colimits"}
@@ -89,27 +101,27 @@ const MathPage = () => {
           -categories
         </>
       }
-      seminar='DubTop'
-      date='Fall 2025'
-      link='https://jay-reiter.github.io/dubtop-fall-2025'
+      seminar="DubTop"
+      date="Fall 2025"
+      link="https://jay-reiter.github.io/dubtop-fall-2025"
     />,
     <TalkItem
-      title='Chromatic homotopy theory and the moduli of formal groups'
-      seminar='Writing Milestone Seminar'
-      date='Spring 2025'
-      link='https://sites.math.washington.edu/~zawadx/milestone_sem.html'
+      title="Chromatic homotopy theory and the moduli of formal groups"
+      seminar="Writing Milestone Seminar"
+      date="Spring 2025"
+      link="https://sites.math.washington.edu/~zawadx/milestone_sem.html"
     />,
     <TalkItem
-      title='Descent, derived descent, and the Adams spectral sequence'
-      seminar='1-2-3 Seminar'
-      date='Spring 2025'
-      link='https://math.washington.edu/events/2025-05-16/1-2-3-seminar-descent-derived-descent-and-adams-spectral-sequence'
+      title="Descent, derived descent, and the Adams spectral sequence"
+      seminar="1-2-3 Seminar"
+      date="Spring 2025"
+      link="https://math.washington.edu/events/2025-05-16/1-2-3-seminar-descent-derived-descent-and-adams-spectral-sequence"
     />,
     <TalkItem
-      title='Sites and stacks'
-      seminar='DubTop Seminar'
-      date='Winter 2025'
-      link='https://sites.google.com/view/dubtopseminar/previous-quarters/winter-2025'
+      title="Sites and stacks"
+      seminar="DubTop Seminar"
+      date="Winter 2025"
+      link="https://sites.google.com/view/dubtopseminar/previous-quarters/winter-2025"
     />,
     <TalkItem
       title={
@@ -122,54 +134,68 @@ const MathPage = () => {
           and formal groups
         </>
       }
-      seminar='DubTop Seminar'
-      date='Winter 2025'
-      link='https://sites.google.com/view/dubtopseminar/previous-quarters/winter-2025'
+      seminar="DubTop Seminar"
+      date="Winter 2025"
+      link="https://sites.google.com/view/dubtopseminar/previous-quarters/winter-2025"
     />,
     <TalkItem
-      title='Foundations of Goodwillie calculus, II'
-      seminar='DubTop Seminar'
-      date='Fall 2024'
-      link='https://sites.google.com/view/dubtopseminar/previous-quarters/fall-2024'
+      title="Foundations of Goodwillie calculus, II"
+      seminar="DubTop Seminar"
+      date="Fall 2024"
+      link="https://sites.google.com/view/dubtopseminar/previous-quarters/fall-2024"
     />,
     <TalkItem
-      title='Computing bordism rings with homotopy theory'
-      seminar='Back to School Seminar'
-      date='Fall 2024'
-      link='https://sites.google.com/view/jacksonmorris/seminars-organized/fall-2024-back-to-school-seminar?authuser=0'
+      title="Computing bordism rings with homotopy theory"
+      seminar="Back to School Seminar"
+      date="Fall 2024"
+      link="https://sites.google.com/view/jacksonmorris/seminars-organized/fall-2024-back-to-school-seminar?authuser=0"
     />,
     <TalkItem
-      title='The Hopf invariant'
-      seminar='Cohomology Operations'
-      date='Spring 2024'
-      link='https://sites.google.com/view/jacksonmorris/seminars-organized/spring-2024-cohomology-operations?authuser=0'
+      title="The Hopf invariant"
+      seminar="Cohomology Operations"
+      date="Spring 2024"
+      link="https://sites.google.com/view/jacksonmorris/seminars-organized/spring-2024-cohomology-operations?authuser=0"
     />,
     <TalkItem
-      title='Construction of the Steenrod squares'
-      seminar='Cohomology Operations'
-      date='Spring 2024'
-      link='https://sites.google.com/view/jacksonmorris/seminars-organized/spring-2024-cohomology-operations?authuser=0'
+      title="Construction of the Steenrod squares"
+      seminar="Cohomology Operations"
+      date="Spring 2024"
+      link="https://sites.google.com/view/jacksonmorris/seminars-organized/spring-2024-cohomology-operations?authuser=0"
     />,
     <TalkItem
-      title='Introduction to Khovanov homology'
-      seminar='Arxiv Seminar'
-      date='Winter 2024'
-      link=''
+      title="Introduction to Khovanov homology"
+      seminar="Arxiv Seminar"
+      date="Winter 2024"
+      link=""
     />,
   ];
 
   return (
     <PageSkeleton>
       <ContentBlock>
-        <Typography level='h3' color='primary' fontWeight='500'>
+        <Typography level="h3" color="primary" fontWeight="500">
           Expository Writing
         </Typography>
-        <WritingItem title={<Typography>
-          Notes on straightening-unstraightening and <MathComponent tex={String.raw`\mathsf{Cat}_\infty`} display={false} />
-          </Typography>} 
-          path='../../pdfs/straightening-unstraightening.pdf'
-          date='December 2025'>
-          Some notes I made while trying to understand straightening-unstraightening over winter break of 2025. Not sure how useful this all is, but I certainly learned a lot about model structures and the foundations of <MathComponent tex={String.raw`\infty`} display={false} />-category theory.  More importantly, I got some things straight (haha) about computing (homotopy) colimits.
+        <WritingItem
+          title={
+            <Typography>
+              Notes on straightening-unstraightening and{" "}
+              <MathComponent
+                tex={String.raw`\mathsf{Cat}_\infty`}
+                display={false}
+              />
+            </Typography>
+          }
+          path="../../pdfs/straightening-unstraightening.pdf"
+          date="December 2025"
+        >
+          Some notes I made while trying to understand
+          straightening-unstraightening over winter break of 2025. Not sure how
+          useful this all is, but I certainly learned a lot about model
+          structures and the foundations of{" "}
+          <MathComponent tex={String.raw`\infty`} display={false} />
+          -category theory. More importantly, I got some things straight (haha)
+          about computing (homotopy) colimits.
         </WritingItem>
         <WritingItem
           title={
@@ -181,8 +207,8 @@ const MathPage = () => {
               -topoi
             </Typography>
           }
-          path='../../pdfs/presentable-cats-and-infty-topoi.pdf'
-          date='October 2025'
+          path="../../pdfs/presentable-cats-and-infty-topoi.pdf"
+          date="October 2025"
         >
           Some user's guide notes which I made to record key facts which come up
           in practice. One of my main goals making these was to understand{" "}
@@ -194,9 +220,9 @@ const MathPage = () => {
           criteria, etc.
         </WritingItem>
         <WritingItem
-          title='Chromatic homotopy theory and the moduli stack of formal groups'
-          path='../../pdfs/chromatic-htpy-and-mfg.pdf'
-          date='Summer 2025'
+          title="Chromatic homotopy theory and the moduli stack of formal groups"
+          path="../../pdfs/chromatic-htpy-and-mfg.pdf"
+          date="Summer 2025"
         >
           A lengthy document covering foundational topics and theorems in
           chromatic homotopy from the algebro-geometric perspective. Also
@@ -206,31 +232,31 @@ const MathPage = () => {
         </WritingItem>
       </ContentBlock>
       <ContentBlock>
-        <Typography level='h3' gutterBottom color='primary' fontWeight='500'>
+        <Typography level="h3" gutterBottom color="primary" fontWeight="500">
           Conferences and Workshops
         </Typography>
-        <List marker='square' size='sm'>
+        <List marker="square" size="sm">
           {travelItems.map((item) => {
             return <ListItem>{item}</ListItem>;
           })}
         </List>
       </ContentBlock>
       <ContentBlock>
-        <Typography level='h3' gutterBottom color='primary' fontWeight='500'>
+        <Typography level="h3" gutterBottom color="primary" fontWeight="500">
           Talks
         </Typography>
-        <Typography level='h4' gutterBottom color='primary' fontWeight='300'>
+        <Typography level="h4" gutterBottom color="primary" fontWeight="300">
           External Talks
         </Typography>
-        <List marker='square' size='sm'>
+        <List marker="square" size="sm">
           {externalTalks.map((item) => {
             return <ListItem>{item}</ListItem>;
           })}
         </List>
-        <Typography level='h4' gutterBottom color='primary' fontWeight='300'>
+        <Typography level="h4" gutterBottom color="primary" fontWeight="300">
           Talks at UW Graduate Student Seminars
         </Typography>
-        <List marker='square'>
+        <List marker="square">
           {internalTalks.map((item) => {
             return <ListItem>{item}</ListItem>;
           })}
