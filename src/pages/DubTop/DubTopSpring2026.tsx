@@ -24,7 +24,10 @@ const DubTopSpring2026 = () => {
           selected topic for the quarter. This quarter---since it's several
           people's last DubTop before graduating and interest is higher than
           ever---it was tough to settle on just one topic. As a result, the
-          theme(s) for DubTop this quarter is (are){" "}
+          very broad theme for DubTop this quarter is {" "} <Typography fontWeight="800" display="inline">
+            "topics in chromatic homotopy theory"
+          </Typography> {" "}
+          with possible subjects including{" "}
           <Typography fontWeight="800" display="inline">
             chromatic <Typography textColor="#550000">r</Typography>
             <Typography textColor="#770000">e</Typography>
@@ -35,16 +38,16 @@ const DubTopSpring2026 = () => {
             <Typography textColor="#dd0000">f</Typography>
             <Typography textColor="#ee0000">t</Typography>
           </Typography>
-          , as well as{" "}
+          ,{" "}
           <Typography fontWeight="800" display="inline">
             <MathComponent tex={String.raw`T(n)`} display={false} />
             -local homotopy theory
           </Typography>
-          , and with an "honorable mention" topic of{" "}
+          , and{" "}
           <Typography fontWeight="800" display="inline">
             motivic cohomology
           </Typography>
-          . Of course, as always, anyone can talk about whatever they want! All
+          . Of course, as always, anyone can talk about whatever they want. All
           that to say, there's not really a theme this quarter. 😼
         </Typography>
         <Typography level="body-sm" textColor="black" gutterBottom>

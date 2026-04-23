@@ -28,39 +28,32 @@ const talks: ReactElement[] = [
     speakerWebsite="https://kclo3-naoh.github.io/"
   />,
   <DubTopTalkItem
-    speaker="TBA"
-    title="TBA"
-    date="April 17"
-    abstract={<>TBA</>}
-    speakerWebsite=""
-  />,
-  <DubTopTalkItem
-    speaker="TBA"
-    title="TBA"
+    speaker="Ting Gong"
+    title="A formal talk"
     date="April 24"
-    abstract={<>TBA</>}
-    speakerWebsite=""
+    abstract={<>In this talk, I will introduce formal groups and explain some of the reasons they are important in algebraic geometry, topology, number theory, and representation theory. I will discuss their role in the origins of chromatic homotopy theory, and also say something about Artin--Mazur formal groups from algebraic geometry. If time permits, I will briefly mention topological modular forms.</>}
+    speakerWebsite="https://sites.google.com/view/tinggong"
   />,
   <DubTopTalkItem
-    speaker="TBA"
+    speaker="Jackson Morris"
     title="TBA"
     date="May 1"
     abstract={<>TBA</>}
-    speakerWebsite=""
+    speakerWebsite="https://jackson-morris.github.io/"
   />,
   <DubTopTalkItem
-    speaker="TBA"
+    speaker="Jackson Morris"
     title="TBA"
     date="May 8"
     abstract={<>TBA</>}
-    speakerWebsite=""
+    speakerWebsite="https://jackson-morris.github.io/"
   />,
   <DubTopTalkItem
-    speaker="TBA"
+    speaker="Jay Reiter"
     title="TBA"
     date="May 15"
     abstract={<>TBA</>}
-    speakerWebsite=""
+    speakerWebsite="https://jay-reiter.github.io/"
   />,
   <DubTopTalkItem
     speaker="TBA"
