@@ -9,6 +9,16 @@ import WritingItem from "../components/math-items/WritingItem";
 const MathPage = () => {
   const travelItems = [
     <TravelItem
+      title="Algebraic Structures in Topology"
+      date="July 2026"
+      location="San Juan, PR"
+    />,
+    <TravelItem
+      title="Cascade Topology Seminar"
+      date="May 2026"
+      location="Portland State University, Portland, OR"
+    />,
+    <TravelItem
       title="Workshop on Higher Categories and Geometry"
       date="March 2026"
       location="NITMB (Northwestern), Chicago, IL"
