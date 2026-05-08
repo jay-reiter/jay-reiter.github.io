@@ -70,6 +70,12 @@ const MathPage = () => {
   ];
   const internalTalks = [
     <TalkItem
+      title="Toward chromatic Galois purity"
+      seminar="DubTop"
+      date="Spring 2026"
+      link="https://jay-reiter.github.io/dubtop-spring-2026"
+      />,
+    <TalkItem
       title={
         <>
           Galois descent in algebraic{" "}

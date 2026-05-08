@@ -5,7 +5,7 @@ const Footer = () => {
     <Box display="flex" justifyContent="right" paddingX={3} paddingY={1}>
       {" "}
       <Typography level="body-xs" textColor="neutral.300">
-        Last updated 23 Apr 2026
+        Last updated 8 May 2026
       </Typography>
     </Box>
   );
