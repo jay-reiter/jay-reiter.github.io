@@ -88,9 +88,36 @@ const talks: ReactElement[] = [
     speaker="Jay Reiter"
     title="Toward chromatic Galois purity"
     date="May 15"
-    abstract={<>The Zariski--Nagata purity theorem states that the Galois group of a scheme is invariant under deletion of a closed subscheme of codimension at least 2. A conjecture of Mathew suggests that a similar phenomenon occurs for chromatically-localized <Math tex={String.raw`\mathbb{E}_\infty`}/>-rings, namely that the map <Math tex={String.raw`L_nR\to L_1R`}/> is an equivalence on Galois groups. If <Math tex={String.raw`R`}/> is Landweber exact, this follows from the fact that <Math tex={String.raw`L_1`}/>-localization behaves like restriction to the open substack <Math tex={String.raw`\mathcal{M}_\mathrm{fg}^{\leq1}\hookrightarrow\mathcal{M}_\mathrm{fg}`}/>, whose compliment, defined by the ideal <Math tex={String.raw`(p,v_1)`}/>, has codimension 2. The case of the <Math tex={String.raw`E_n`}/>-local sphere then follows from the fact that the map <Math tex={String.raw`L_n\mathbb{S}\to E_n`}/> is descendable.
-
-In this talk, I'll introduce Mathew's theory of Galois groups of 2-rings and descendibility, and discuss some thoughts I've been having about how techniques from the proof of the chromatic Nullstellensatz may apply to this conjecture. This will probably include some high-level discussion of the spherical Witt vector / tilt adjunction, <Math tex={String.raw`T(n)`}/>-local homotopy, and the process of constructing maps to Lubin--Tate theories which detect nilpotence.</>}
+    abstract={
+      <>
+        The Zariski--Nagata purity theorem states that the Galois group of a
+        scheme is invariant under deletion of a closed subscheme of codimension
+        at least 2. A conjecture of Mathew suggests that a similar phenomenon
+        occurs for chromatically-localized{" "}
+        <Math tex={String.raw`\mathbb{E}_\infty`} />
+        -rings, namely that the map <Math tex={String.raw`L_nR\to L_1R`} /> is
+        an equivalence on Galois groups. If <Math tex={String.raw`R`} /> is
+        Landweber exact, this follows from the fact that{" "}
+        <Math tex={String.raw`L_1`} />
+        -localization behaves like restriction to the open substack{" "}
+        <Math
+          tex={String.raw`\mathcal{M}_\mathrm{fg}^{\leq1}\hookrightarrow\mathcal{M}_\mathrm{fg}`}
+        />
+        , whose compliment, defined by the ideal{" "}
+        <Math tex={String.raw`(p,v_1)`} />, has codimension 2. The case of the{" "}
+        <Math tex={String.raw`E_n`} />
+        -local sphere then follows from the fact that the map{" "}
+        <Math tex={String.raw`L_n\mathbb{S}\to E_n`} /> is descendable. In this
+        talk, I'll introduce Mathew's theory of Galois groups of 2-rings and
+        descendability, and discuss some thoughts I've been having about how
+        techniques from the proof of the chromatic Nullstellensatz may apply to
+        this conjecture. This will probably include some high-level discussion
+        of the spherical Witt vector / tilt adjunction,{" "}
+        <Math tex={String.raw`T(n)`} />
+        -local homotopy, and the process of constructing maps to Lubin--Tate
+        theories which detect nilpotence.
+      </>
+    }
     speakerWebsite="https://jay-reiter.github.io/"
   />,
   <DubTopTalkItem
