@@ -48,7 +48,7 @@ const talks: ReactElement[] = [
     title={
       <>
         Higher real <Math tex={String.raw`K`} />
-        -theories, redshift, and blueshift
+        -theories, redshift, and blueshift, I and II
       </>
     }
     date="May 1 & May 8"
@@ -71,6 +71,7 @@ const talks: ReactElement[] = [
         -theories, and they are among the most important and well-studied
         spectra we have at our disposal.
         <br />
+        <br />
         In this series of talks I will discuss the role that higher real{" "}
         <Math tex={String.raw`K`} />
         -theories play in chromatic homotopy theory. In talk 1, I will introduce
@@ -86,7 +87,7 @@ const talks: ReactElement[] = [
   />,
   <DubTopTalkItem
     speaker="Jay Reiter"
-    title="Toward chromatic Galois purity"
+    title="Toward chromatic Galois purity, I"
     date="May 15"
     abstract={
       <>
@@ -108,24 +109,33 @@ const talks: ReactElement[] = [
         <Math tex={String.raw`E_n`} />
         -local sphere then follows from the fact that the map{" "}
         <Math tex={String.raw`L_n\mathbb{S}\to E_n`} /> is descendable. In this
-        talk, I'll introduce Mathew's theory of Galois groups of 2-rings and
-        descendability, and discuss some thoughts I've been having about how
-        techniques from the proof of the chromatic Nullstellensatz may apply to
-        this conjecture. This will probably include some high-level discussion
-        of the spherical Witt vector / tilt adjunction,{" "}
-        <Math tex={String.raw`T(n)`} />
-        -local homotopy, and the process of constructing maps to Lubin--Tate
-        theories which detect nilpotence.
+        first talk, I'll introduce Mathew's theory of Galois groups of 2-rings
+        and descendability, and outline his proofs of the conjecture in special
+        cases.
       </>
     }
     speakerWebsite="https://jay-reiter.github.io/"
   />,
   <DubTopTalkItem
-    speaker="TBA"
-    title="TBA"
+    speaker="Jay Reiter"
+    title="Toward chromatic Galois purity, II"
     date="May 22"
-    abstract={<>TBA</>}
-    speakerWebsite=""
+    abstract={
+      <>
+        Last time, I introduced Mathew's Galois theory of presentably symmetric
+        monoidal stable <Math tex={String.raw`\infty`} />
+        -categories, descendability, and chromatic Galois purity conjecture that
+        the localization map <Math tex={String.raw`L_nR\to L_1R`} /> induces an
+        equivalence on Galois groups for every{" "}
+        <Math tex={String.raw`\mathbb{E}_\infty`} />
+        -ring <Math tex={String.raw`R`} />. In this talk, I'll discuss how tools
+        developed in the proof of the chromatic Nullstellensatz may be relevant
+        to this conjecture. I'll talk about spectral Witt vectors and tilting,
+        the construction of Lubin--Tate covers that detect nilpotence, and the
+        circumstances in which these covers are descendable.
+      </>
+    }
+    speakerWebsite="https://jay-reiter.github.io/"
   />,
   <DubTopTalkItem
     speaker="TBA"
