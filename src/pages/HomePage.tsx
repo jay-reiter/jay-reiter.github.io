@@ -44,7 +44,7 @@ const HomePage = () => {
               </Typography>
             </Box>
             <Typography level="body-sm" textColor="black">
-              I am a third-year math Ph.D. student at the{" "}
+              I am a fourth-year math Ph.D. student at the{" "}
               <Link
                 target="_blank"
                 href="https://math.washington.edu/"

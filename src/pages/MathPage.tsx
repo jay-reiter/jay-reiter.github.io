@@ -9,6 +9,16 @@ import WritingItem from "../components/math-items/WritingItem";
 const MathPage = () => {
   const travelItems = [
     <TravelItem
+      title="Stable Homotopy Theory and Arithmetic Geometry"
+      date="February - March, 2027"
+      location="CMSA, Cambridge, MA"
+    />,
+    <TravelItem
+      title="Motivic Homotopy Theory: Connections and Applications"
+      date="October 2026"
+      location="SL Math, Berkeley, CA"
+    />,
+    <TravelItem
       title="Algebraic Structures in Topology"
       date="July 2026"
       location="San Juan, PR"
@@ -21,7 +31,7 @@ const MathPage = () => {
     <TravelItem
       title="Workshop on Higher Categories and Geometry"
       date="March 2026"
-      location="NITMB (Northwestern), Chicago, IL"
+      location="NITMB, Chicago, IL"
     />,
     <TravelItem
       title="European Autumn School in Topology"
@@ -74,7 +84,7 @@ const MathPage = () => {
       seminar="DubTop"
       date="Spring 2026"
       link="https://jay-reiter.github.io/dubtop-spring-2026"
-      />,
+    />,
     <TalkItem
       title={
         <>
